@@ -5,8 +5,10 @@
 //  Created by Jorge Moura on 14/09/2020.
 //
 
-struct AppState {
+import Foundation
 
-    let xpto: Int
-    let xpto2: String?
+struct AppState: Identifiable, Equatable {
+
+    var id: UUID
+    var favourites: [Distance]
 }

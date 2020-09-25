@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,28 @@
 		591F2C7C250D280A0037619D /* TestsMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F2C7B250D280A0037619D /* TestsMacOS.swift */; };
 		591F2C7E250D280A0037619D /* RunitzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F2C55250D28080037619D /* RunitzApp.swift */; };
 		591F2C7F250D280A0037619D /* RunitzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F2C55250D28080037619D /* RunitzApp.swift */; };
-		591F2C80250D280A0037619D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F2C56250D28080037619D /* ContentView.swift */; };
-		591F2C81250D280A0037619D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F2C56250D28080037619D /* ContentView.swift */; };
 		591F2C82250D280A0037619D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591F2C57250D280A0037619D /* Assets.xcassets */; };
 		591F2C83250D280A0037619D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591F2C57250D280A0037619D /* Assets.xcassets */; };
 		59B576E4251007760050787D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B576E3251007760050787D /* AppState.swift */; };
+		CFBAF220251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
+		CFBAF221251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
+		CFBAF22C251E81AC0007FC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF22B251E81AC0007FC68 /* Utilities.swift */; };
+		CFBAF22D251E81AC0007FC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF22B251E81AC0007FC68 /* Utilities.swift */; };
+		CFBAF23B251E82AB0007FC68 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF23A251E82AB0007FC68 /* AppAction.swift */; };
+		CFBAF23C251E82AB0007FC68 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF23A251E82AB0007FC68 /* AppAction.swift */; };
+		CFBAF242251E82BD0007FC68 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF241251E82BD0007FC68 /* AppEnvironment.swift */; };
+		CFBAF243251E82BD0007FC68 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF241251E82BD0007FC68 /* AppEnvironment.swift */; };
+		CFBAF24A251E83B30007FC68 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF249251E83B30007FC68 /* Favourite.swift */; };
+		CFBAF24B251E83B30007FC68 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF249251E83B30007FC68 /* Favourite.swift */; };
+		CFBAF255251E83BE0007FC68 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF254251E83BE0007FC68 /* Unit.swift */; };
+		CFBAF256251E83BE0007FC68 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF254251E83BE0007FC68 /* Unit.swift */; };
+		CFBAF25C251E83D90007FC68 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF25B251E83D90007FC68 /* Distance.swift */; };
+		CFBAF25D251E83D90007FC68 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF25B251E83D90007FC68 /* Distance.swift */; };
+		CFBAF26F251E8E3D0007FC68 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF26E251E8E3D0007FC68 /* AppReducer.swift */; };
+		CFBAF270251E8E3D0007FC68 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF26E251E8E3D0007FC68 /* AppReducer.swift */; };
+		CFBAF27B251E901D0007FC68 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CFBAF27A251E901D0007FC68 /* ComposableArchitecture */; };
+		CFBAF27D251E901D0007FC68 /* ComposableCoreMotion in Frameworks */ = {isa = PBXBuildFile; productRef = CFBAF27C251E901D0007FC68 /* ComposableCoreMotion */; };
+		CFBAF27F251E901D0007FC68 /* ComposableCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = CFBAF27E251E901D0007FC68 /* ComposableCoreLocation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		591F2C55250D28080037619D /* RunitzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunitzApp.swift; sourceTree = "<group>"; };
-		591F2C56250D28080037619D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		591F2C57250D280A0037619D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		591F2C5C250D280A0037619D /* runitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		591F2C5F250D280A0037619D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +67,14 @@
 		591F2C7B250D280A0037619D /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		591F2C7D250D280A0037619D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59B576E3251007760050787D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CFBAF21F251E81780007FC68 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CFBAF22B251E81AC0007FC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CFBAF23A251E82AB0007FC68 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		CFBAF241251E82BD0007FC68 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		CFBAF249251E83B30007FC68 /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		CFBAF254251E83BE0007FC68 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		CFBAF25B251E83D90007FC68 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		CFBAF26E251E8E3D0007FC68 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBAF27F251E901D0007FC68 /* ComposableCoreLocation in Frameworks */,
+				CFBAF27D251E901D0007FC68 /* ComposableCoreMotion in Frameworks */,
+				CFBAF27B251E901D0007FC68 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,11 +127,10 @@
 		591F2C54250D28080037619D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				59B576E22510075E0050787D /* system */,
 				59B576E1251007540050787D /* application */,
-				59B576E0251007460050787D /* screens */,
+				CFBAF22A251E81810007FC68 /* environment */,
+				CFBAF21E251E816A0007FC68 /* screens */,
 				591F2C55250D28080037619D /* RunitzApp.swift */,
-				591F2C56250D28080037619D /* ContentView.swift */,
 				591F2C57250D280A0037619D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -156,26 +182,42 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		59B576E0251007460050787D /* screens */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = screens;
-			sourceTree = "<group>";
-		};
 		59B576E1251007540050787D /* application */ = {
 			isa = PBXGroup;
 			children = (
+				CFBAF248251E83A10007FC68 /* domain */,
+				CFBAF23A251E82AB0007FC68 /* AppAction.swift */,
+				CFBAF241251E82BD0007FC68 /* AppEnvironment.swift */,
+				CFBAF26E251E8E3D0007FC68 /* AppReducer.swift */,
 				59B576E3251007760050787D /* AppState.swift */,
 			);
 			path = application;
 			sourceTree = "<group>";
 		};
-		59B576E22510075E0050787D /* system */ = {
+		CFBAF21E251E816A0007FC68 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				CFBAF21F251E81780007FC68 /* Home.swift */,
 			);
-			path = system;
+			path = screens;
+			sourceTree = "<group>";
+		};
+		CFBAF22A251E81810007FC68 /* environment */ = {
+			isa = PBXGroup;
+			children = (
+				CFBAF22B251E81AC0007FC68 /* Utilities.swift */,
+			);
+			path = environment;
+			sourceTree = "<group>";
+		};
+		CFBAF248251E83A10007FC68 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				CFBAF25B251E83D90007FC68 /* Distance.swift */,
+				CFBAF249251E83B30007FC68 /* Favourite.swift */,
+				CFBAF254251E83BE0007FC68 /* Unit.swift */,
+			);
+			path = domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +237,11 @@
 			dependencies = (
 			);
 			name = "runitz (iOS)";
+			packageProductDependencies = (
+				CFBAF27A251E901D0007FC68 /* ComposableArchitecture */,
+				CFBAF27C251E901D0007FC68 /* ComposableCoreMotion */,
+				CFBAF27E251E901D0007FC68 /* ComposableCoreLocation */,
+			);
 			productName = "runitz (iOS)";
 			productReference = 591F2C5C250D280A0037619D /* runitz.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +334,9 @@
 				Base,
 			);
 			mainGroup = 591F2C4F250D28080037619D;
+			packageReferences = (
+				CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 591F2C5D250D280A0037619D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,9 +426,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBAF25C251E83D90007FC68 /* Distance.swift in Sources */,
 				59B576E4251007760050787D /* AppState.swift in Sources */,
-				591F2C80250D280A0037619D /* ContentView.swift in Sources */,
+				CFBAF24A251E83B30007FC68 /* Favourite.swift in Sources */,
+				CFBAF220251E81780007FC68 /* Home.swift in Sources */,
+				CFBAF26F251E8E3D0007FC68 /* AppReducer.swift in Sources */,
+				CFBAF23B251E82AB0007FC68 /* AppAction.swift in Sources */,
+				CFBAF22C251E81AC0007FC68 /* Utilities.swift in Sources */,
+				CFBAF255251E83BE0007FC68 /* Unit.swift in Sources */,
 				591F2C7E250D280A0037619D /* RunitzApp.swift in Sources */,
+				CFBAF242251E82BD0007FC68 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +443,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				591F2C81250D280A0037619D /* ContentView.swift in Sources */,
+				CFBAF243251E82BD0007FC68 /* AppEnvironment.swift in Sources */,
+				CFBAF221251E81780007FC68 /* Home.swift in Sources */,
+				CFBAF23C251E82AB0007FC68 /* AppAction.swift in Sources */,
+				CFBAF270251E8E3D0007FC68 /* AppReducer.swift in Sources */,
+				CFBAF256251E83BE0007FC68 /* Unit.swift in Sources */,
+				CFBAF25D251E83D90007FC68 /* Distance.swift in Sources */,
+				CFBAF24B251E83B30007FC68 /* Favourite.swift in Sources */,
+				CFBAF22D251E81AC0007FC68 /* Utilities.swift in Sources */,
 				591F2C7F250D280A0037619D /* RunitzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -769,6 +833,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFBAF27A251E901D0007FC68 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CFBAF27C251E901D0007FC68 /* ComposableCoreMotion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableCoreMotion;
+		};
+		CFBAF27E251E901D0007FC68 /* ComposableCoreLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableCoreLocation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 591F2C50250D28080037619D /* Project object */;
 }
