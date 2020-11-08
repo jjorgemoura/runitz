@@ -16,6 +16,8 @@
 		59B576E4251007760050787D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B576E3251007760050787D /* AppState.swift */; };
 		CF7465CB255871D700B43A13 /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7465CA255871D700B43A13 /* Pace.swift */; };
 		CF7465CC255871D700B43A13 /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7465CA255871D700B43A13 /* Pace.swift */; };
+		CF7465F82558916700B43A13 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7465F72558916700B43A13 /* UnitTests.swift */; };
+		CF7466012558944F00B43A13 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B576E3251007760050787D /* AppState.swift */; };
 		CF84847825575760000236AB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CF84847725575760000236AB /* ComposableArchitecture */; };
 		CF89B9DC255847D70054DBB3 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = CF89B9DB255847D70054DBB3 /* Overture */; };
 		CFBAF220251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
@@ -69,6 +71,7 @@
 		591F2C7D250D280A0037619D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59B576E3251007760050787D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CF7465CA255871D700B43A13 /* Pace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
+		CF7465F72558916700B43A13 /* UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		CFBAF21F251E81780007FC68 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CFBAF22B251E81AC0007FC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CFBAF23A251E82AB0007FC68 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 				591F2C6F250D280A0037619D /* Tests iOS */,
 				591F2C7A250D280A0037619D /* Tests macOS */,
 				591F2C5D250D280A0037619D /* Products */,
+				CF74660A25589EC100B43A13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +172,7 @@
 		591F2C6F250D280A0037619D /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CF7465F52558916700B43A13 /* application */,
 				591F2C70250D280A0037619D /* TestsIOS.swift */,
 				591F2C72250D280A0037619D /* Info.plist */,
 			);
@@ -193,6 +198,29 @@
 				59B576E3251007760050787D /* AppState.swift */,
 			);
 			path = application;
+			sourceTree = "<group>";
+		};
+		CF7465F52558916700B43A13 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				CF7465F62558916700B43A13 /* domain */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		CF7465F62558916700B43A13 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				CF7465F72558916700B43A13 /* UnitTests.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		CF74660A25589EC100B43A13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CFBAF21E251E816A0007FC68 /* screens */ = {
@@ -279,6 +307,8 @@
 				591F2C6E250D280A0037619D /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
+			packageProductDependencies = (
+			);
 			productName = "Tests iOS";
 			productReference = 591F2C6C250D280A0037619D /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -453,6 +483,7 @@
 				CFBAF270251E8E3D0007FC68 /* AppReducer.swift in Sources */,
 				CF7465CC255871D700B43A13 /* Pace.swift in Sources */,
 				CFBAF256251E83BE0007FC68 /* Unit.swift in Sources */,
+				CF7466012558944F00B43A13 /* AppState.swift in Sources */,
 				CFBAF25D251E83D90007FC68 /* Distance.swift in Sources */,
 				CFBAF24B251E83B30007FC68 /* Favourite.swift in Sources */,
 				CFBAF22D251E81AC0007FC68 /* Utilities.swift in Sources */,
@@ -465,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				591F2C71250D280A0037619D /* TestsIOS.swift in Sources */,
+				CF7465F82558916700B43A13 /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,7 +699,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjorgemoura.runitz;
 				PRODUCT_NAME = runitz;
@@ -693,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjorgemoura.runitz;
 				PRODUCT_NAME = runitz;
