@@ -8,7 +8,6 @@ struct Home: View {
         VStack(spacing: 24.0) {
             Text("0")
             Button("to mile") {
-
             }
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         }

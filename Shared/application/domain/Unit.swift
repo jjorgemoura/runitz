@@ -5,5 +5,5 @@ enum Unit: String, CaseIterable, Equatable {
     case km = "Km"
     case mile = "Mile"
 
-    static let mileInKm: Double = 1.609344
+    static let mileInKm = 1.609_344
 }

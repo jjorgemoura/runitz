@@ -74,7 +74,7 @@ opt_in_rules:
  - pattern_matching_keywords
  - prefer_self_type_over_type_of_self
  - prefer_zero_over_explicit_init
-#  - prefixed_toplevel_constant
+ - prefixed_toplevel_constant
  - private_action
  - private_outlet
  # - prohibited_interface_builder

@@ -14,6 +14,8 @@
 		591F2C82250D280A0037619D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591F2C57250D280A0037619D /* Assets.xcassets */; };
 		591F2C83250D280A0037619D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591F2C57250D280A0037619D /* Assets.xcassets */; };
 		59B576E4251007760050787D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B576E3251007760050787D /* AppState.swift */; };
+		CF7465CB255871D700B43A13 /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7465CA255871D700B43A13 /* Pace.swift */; };
+		CF7465CC255871D700B43A13 /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7465CA255871D700B43A13 /* Pace.swift */; };
 		CF84847825575760000236AB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CF84847725575760000236AB /* ComposableArchitecture */; };
 		CF89B9DC255847D70054DBB3 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = CF89B9DB255847D70054DBB3 /* Overture */; };
 		CFBAF220251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
@@ -66,6 +68,7 @@
 		591F2C7B250D280A0037619D /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		591F2C7D250D280A0037619D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59B576E3251007760050787D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CF7465CA255871D700B43A13 /* Pace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
 		CFBAF21F251E81780007FC68 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CFBAF22B251E81AC0007FC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CFBAF23A251E82AB0007FC68 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 			children = (
 				CFBAF25B251E83D90007FC68 /* Distance.swift */,
 				CFBAF249251E83B30007FC68 /* Favourite.swift */,
+				CF7465CA255871D700B43A13 /* Pace.swift */,
 				CFBAF254251E83BE0007FC68 /* Unit.swift */,
 			);
 			path = domain;
@@ -304,7 +308,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Jorge Moura";
 				TargetAttributes = {
 					591F2C5B250D280A0037619D = {
@@ -426,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBAF25C251E83D90007FC68 /* Distance.swift in Sources */,
+				CF7465CB255871D700B43A13 /* Pace.swift in Sources */,
 				59B576E4251007760050787D /* AppState.swift in Sources */,
 				CFBAF24A251E83B30007FC68 /* Favourite.swift in Sources */,
 				CFBAF220251E81780007FC68 /* Home.swift in Sources */,
@@ -446,6 +451,7 @@
 				CFBAF221251E81780007FC68 /* Home.swift in Sources */,
 				CFBAF23C251E82AB0007FC68 /* AppAction.swift in Sources */,
 				CFBAF270251E8E3D0007FC68 /* AppReducer.swift in Sources */,
+				CF7465CC255871D700B43A13 /* Pace.swift in Sources */,
 				CFBAF256251E83BE0007FC68 /* Unit.swift in Sources */,
 				CFBAF25D251E83D90007FC68 /* Distance.swift in Sources */,
 				CFBAF24B251E83B30007FC68 /* Favourite.swift in Sources */,
@@ -650,6 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6CHZFW8V57;
@@ -675,6 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6CHZFW8V57;
