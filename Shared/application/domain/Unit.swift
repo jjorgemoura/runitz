@@ -1,6 +1,5 @@
 //
-//  Copyright © 2020  ___ORGANIZATIONNAME___. All rights reserved.
-//
+// Copyright © 2020  Jorge Moura . All rights reserved.
 
 enum Unit: String, CaseIterable, Equatable {
     case km = "Km"

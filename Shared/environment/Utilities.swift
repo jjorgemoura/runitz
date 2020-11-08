@@ -1,5 +1,4 @@
 //
-//  Copyright © 2020  ___ORGANIZATIONNAME___. All rights reserved.
-//
+// Copyright © 2020  Jorge Moura . All rights reserved.
 
 import Foundation

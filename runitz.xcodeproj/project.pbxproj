@@ -16,8 +16,6 @@
 		59B576E4251007760050787D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B576E3251007760050787D /* AppState.swift */; };
 		CF84847825575760000236AB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CF84847725575760000236AB /* ComposableArchitecture */; };
 		CF89B9DC255847D70054DBB3 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = CF89B9DB255847D70054DBB3 /* Overture */; };
-		CF89B9E225584ECA0054DBB3 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89B9E125584ECA0054DBB3 /* TestFile.swift */; };
-		CF89B9E325584ECA0054DBB3 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89B9E125584ECA0054DBB3 /* TestFile.swift */; };
 		CFBAF220251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
 		CFBAF221251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
 		CFBAF22C251E81AC0007FC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF22B251E81AC0007FC68 /* Utilities.swift */; };
@@ -68,7 +66,6 @@
 		591F2C7B250D280A0037619D /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		591F2C7D250D280A0037619D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59B576E3251007760050787D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		CF89B9E125584ECA0054DBB3 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		CFBAF21F251E81780007FC68 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CFBAF22B251E81AC0007FC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CFBAF23A251E82AB0007FC68 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -217,7 +214,6 @@
 				CFBAF25B251E83D90007FC68 /* Distance.swift */,
 				CFBAF249251E83B30007FC68 /* Favourite.swift */,
 				CFBAF254251E83BE0007FC68 /* Unit.swift */,
-				CF89B9E125584ECA0054DBB3 /* TestFile.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -309,6 +305,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Jorge Moura";
 				TargetAttributes = {
 					591F2C5B250D280A0037619D = {
 						CreatedOnToolsVersion = 12.0;
@@ -430,7 +427,6 @@
 			files = (
 				CFBAF25C251E83D90007FC68 /* Distance.swift in Sources */,
 				59B576E4251007760050787D /* AppState.swift in Sources */,
-				CF89B9E225584ECA0054DBB3 /* TestFile.swift in Sources */,
 				CFBAF24A251E83B30007FC68 /* Favourite.swift in Sources */,
 				CFBAF220251E81780007FC68 /* Home.swift in Sources */,
 				CFBAF26F251E8E3D0007FC68 /* AppReducer.swift in Sources */,
@@ -449,7 +445,6 @@
 				CFBAF243251E82BD0007FC68 /* AppEnvironment.swift in Sources */,
 				CFBAF221251E81780007FC68 /* Home.swift in Sources */,
 				CFBAF23C251E82AB0007FC68 /* AppAction.swift in Sources */,
-				CF89B9E325584ECA0054DBB3 /* TestFile.swift in Sources */,
 				CFBAF270251E8E3D0007FC68 /* AppReducer.swift in Sources */,
 				CFBAF256251E83BE0007FC68 /* Unit.swift in Sources */,
 				CFBAF25D251E83D90007FC68 /* Distance.swift in Sources */,
