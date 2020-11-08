@@ -14,6 +14,10 @@
 		591F2C82250D280A0037619D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591F2C57250D280A0037619D /* Assets.xcassets */; };
 		591F2C83250D280A0037619D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591F2C57250D280A0037619D /* Assets.xcassets */; };
 		59B576E4251007760050787D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B576E3251007760050787D /* AppState.swift */; };
+		CF84847825575760000236AB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CF84847725575760000236AB /* ComposableArchitecture */; };
+		CF89B9DC255847D70054DBB3 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = CF89B9DB255847D70054DBB3 /* Overture */; };
+		CF89B9E225584ECA0054DBB3 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89B9E125584ECA0054DBB3 /* TestFile.swift */; };
+		CF89B9E325584ECA0054DBB3 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89B9E125584ECA0054DBB3 /* TestFile.swift */; };
 		CFBAF220251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
 		CFBAF221251E81780007FC68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF21F251E81780007FC68 /* Home.swift */; };
 		CFBAF22C251E81AC0007FC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF22B251E81AC0007FC68 /* Utilities.swift */; };
@@ -30,9 +34,6 @@
 		CFBAF25D251E83D90007FC68 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF25B251E83D90007FC68 /* Distance.swift */; };
 		CFBAF26F251E8E3D0007FC68 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF26E251E8E3D0007FC68 /* AppReducer.swift */; };
 		CFBAF270251E8E3D0007FC68 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBAF26E251E8E3D0007FC68 /* AppReducer.swift */; };
-		CFBAF27B251E901D0007FC68 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CFBAF27A251E901D0007FC68 /* ComposableArchitecture */; };
-		CFBAF27D251E901D0007FC68 /* ComposableCoreMotion in Frameworks */ = {isa = PBXBuildFile; productRef = CFBAF27C251E901D0007FC68 /* ComposableCoreMotion */; };
-		CFBAF27F251E901D0007FC68 /* ComposableCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = CFBAF27E251E901D0007FC68 /* ComposableCoreLocation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		591F2C7B250D280A0037619D /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		591F2C7D250D280A0037619D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59B576E3251007760050787D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CF89B9E125584ECA0054DBB3 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		CFBAF21F251E81780007FC68 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CFBAF22B251E81AC0007FC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CFBAF23A251E82AB0007FC68 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -82,9 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFBAF27F251E901D0007FC68 /* ComposableCoreLocation in Frameworks */,
-				CFBAF27D251E901D0007FC68 /* ComposableCoreMotion in Frameworks */,
-				CFBAF27B251E901D0007FC68 /* ComposableArchitecture in Frameworks */,
+				CF89B9DC255847D70054DBB3 /* Overture in Frameworks */,
+				CF84847825575760000236AB /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +217,7 @@
 				CFBAF25B251E83D90007FC68 /* Distance.swift */,
 				CFBAF249251E83B30007FC68 /* Favourite.swift */,
 				CFBAF254251E83BE0007FC68 /* Unit.swift */,
+				CF89B9E125584ECA0054DBB3 /* TestFile.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -238,9 +240,8 @@
 			);
 			name = "runitz (iOS)";
 			packageProductDependencies = (
-				CFBAF27A251E901D0007FC68 /* ComposableArchitecture */,
-				CFBAF27C251E901D0007FC68 /* ComposableCoreMotion */,
-				CFBAF27E251E901D0007FC68 /* ComposableCoreLocation */,
+				CF84847725575760000236AB /* ComposableArchitecture */,
+				CF89B9DB255847D70054DBB3 /* Overture */,
 			);
 			productName = "runitz (iOS)";
 			productReference = 591F2C5C250D280A0037619D /* runitz.app */;
@@ -335,7 +336,8 @@
 			);
 			mainGroup = 591F2C4F250D28080037619D;
 			packageReferences = (
-				CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				CF84847625575760000236AB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				CF89B9DA255847D70054DBB3 /* XCRemoteSwiftPackageReference "swift-overture" */,
 			);
 			productRefGroup = 591F2C5D250D280A0037619D /* Products */;
 			projectDirPath = "";
@@ -428,6 +430,7 @@
 			files = (
 				CFBAF25C251E83D90007FC68 /* Distance.swift in Sources */,
 				59B576E4251007760050787D /* AppState.swift in Sources */,
+				CF89B9E225584ECA0054DBB3 /* TestFile.swift in Sources */,
 				CFBAF24A251E83B30007FC68 /* Favourite.swift in Sources */,
 				CFBAF220251E81780007FC68 /* Home.swift in Sources */,
 				CFBAF26F251E8E3D0007FC68 /* AppReducer.swift in Sources */,
@@ -446,6 +449,7 @@
 				CFBAF243251E82BD0007FC68 /* AppEnvironment.swift in Sources */,
 				CFBAF221251E81780007FC68 /* Home.swift in Sources */,
 				CFBAF23C251E82AB0007FC68 /* AppAction.swift in Sources */,
+				CF89B9E325584ECA0054DBB3 /* TestFile.swift in Sources */,
 				CFBAF270251E8E3D0007FC68 /* AppReducer.swift in Sources */,
 				CFBAF256251E83BE0007FC68 /* Unit.swift in Sources */,
 				CFBAF25D251E83D90007FC68 /* Distance.swift in Sources */,
@@ -835,31 +839,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		CF84847625575760000236AB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:pointfreeco/swift-composable-architecture.git";
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.8.0;
+				minimumVersion = 0.9.0;
+			};
+		};
+		CF89B9DA255847D70054DBB3 /* XCRemoteSwiftPackageReference "swift-overture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-overture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CFBAF27A251E901D0007FC68 /* ComposableArchitecture */ = {
+		CF84847725575760000236AB /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = CF84847625575760000236AB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
-		CFBAF27C251E901D0007FC68 /* ComposableCoreMotion */ = {
+		CF89B9DB255847D70054DBB3 /* Overture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableCoreMotion;
-		};
-		CFBAF27E251E901D0007FC68 /* ComposableCoreLocation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CFBAF279251E901D0007FC68 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableCoreLocation;
+			package = CF89B9DA255847D70054DBB3 /* XCRemoteSwiftPackageReference "swift-overture" */;
+			productName = Overture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
