@@ -7,16 +7,20 @@ import ComposableArchitecture
 let appReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, environment in
 
     switch action {
-    case .addFavourite(let distance):
-        print(distance)
+    case let .convert(distanceValue, unit):
+        print(distanceValue)
+
+        let distance = Distance(value: Double(distanceValue), unit: unit, isFavourite: false)
+        state.currentDistance = distance
+
         return .none
-    case .removeFavourite(let distance):
+
+    case .favouriteToggled(let distance):
         print(distance)
+//        distance.isFavourite.toggle()
         return .none
-    case .convert(let distance):
-        print(distance)
-        return .none
-    case .generateList:
+
+    case .generateDistanceList:
         return .none
     }
 }

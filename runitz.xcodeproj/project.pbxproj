@@ -19,7 +19,6 @@
 		CFF881A8255929A60023E5E6 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8819D255929A60023E5E6 /* Distance.swift */; };
 		CFF881A9255929A60023E5E6 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8819E255929A60023E5E6 /* Unit.swift */; };
 		CFF881AA255929A60023E5E6 /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8819F255929A60023E5E6 /* Pace.swift */; };
-		CFF881AB255929A60023E5E6 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF881A0255929A60023E5E6 /* Favourite.swift */; };
 		CFF881AC255929A60023E5E6 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF881A1255929A60023E5E6 /* AppEnvironment.swift */; };
 		CFF881AD255929A60023E5E6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF881A3255929A60023E5E6 /* Utilities.swift */; };
 		CFF881B825592A150023E5E6 /* RunitzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF881B725592A150023E5E6 /* RunitzApp.swift */; };
@@ -63,7 +62,6 @@
 		CFF8819D255929A60023E5E6 /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		CFF8819E255929A60023E5E6 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		CFF8819F255929A60023E5E6 /* Pace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
-		CFF881A0255929A60023E5E6 /* Favourite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		CFF881A1255929A60023E5E6 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		CFF881A3255929A60023E5E6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CFF881B725592A150023E5E6 /* RunitzApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunitzApp.swift; sourceTree = "<group>"; };
@@ -185,10 +183,10 @@
 			isa = PBXGroup;
 			children = (
 				CFF8819C255929A60023E5E6 /* domain */,
-				CFF88199255929A60023E5E6 /* AppState.swift */,
-				CFF8819A255929A60023E5E6 /* AppReducer.swift */,
 				CFF8819B255929A60023E5E6 /* AppAction.swift */,
 				CFF881A1255929A60023E5E6 /* AppEnvironment.swift */,
+				CFF8819A255929A60023E5E6 /* AppReducer.swift */,
+				CFF88199255929A60023E5E6 /* AppState.swift */,
 			);
 			path = application;
 			sourceTree = "<group>";
@@ -197,9 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				CFF8819D255929A60023E5E6 /* Distance.swift */,
-				CFF8819E255929A60023E5E6 /* Unit.swift */,
 				CFF8819F255929A60023E5E6 /* Pace.swift */,
-				CFF881A0255929A60023E5E6 /* Favourite.swift */,
+				CFF8819E255929A60023E5E6 /* Unit.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -379,7 +376,6 @@
 				CFF881A9255929A60023E5E6 /* Unit.swift in Sources */,
 				CFF881A5255929A60023E5E6 /* AppState.swift in Sources */,
 				CFF881A8255929A60023E5E6 /* Distance.swift in Sources */,
-				CFF881AB255929A60023E5E6 /* Favourite.swift in Sources */,
 				CFF881AD255929A60023E5E6 /* Utilities.swift in Sources */,
 				CFF881AC255929A60023E5E6 /* AppEnvironment.swift in Sources */,
 			);

@@ -19,7 +19,6 @@ class UnitTests: XCTestCase {
 
         let multiplicationFactor = sut.factor(to: .mile)
 
-        XCTAssertEqual(multiplicationFactor, 1 / Unit.mileInKm)
         XCTAssertEqual(multiplicationFactor.rounded(), 0.621_371.rounded())
     }
 
@@ -28,7 +27,6 @@ class UnitTests: XCTestCase {
 
         let multiplicationFactor = sut.factor(to: .km)
 
-        XCTAssertEqual(multiplicationFactor, Unit.mileInKm)
         XCTAssertEqual(multiplicationFactor, 1.609_344)
     }
 
