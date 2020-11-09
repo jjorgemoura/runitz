@@ -20,7 +20,7 @@ class UnitTests: XCTestCase {
         let multiplicationFactor = sut.factor(to: .mile)
 
         XCTAssertEqual(multiplicationFactor, 1 / Unit.mileInKm)
-        XCTAssertEqual(multiplicationFactor, 0.621_371)
+        XCTAssertEqual(multiplicationFactor.rounded(), 0.621_371.rounded())
     }
 
     func testMiletoKmConvertionIsOnePointSix() {
