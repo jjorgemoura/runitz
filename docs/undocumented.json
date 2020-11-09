@@ -1,0 +1,187 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/RunitzApp.swift",
+      "line": 7,
+      "symbol": "RunitzApp",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppAction.swift",
+      "line": 4,
+      "symbol": "AppAction",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppAction.swift",
+      "line": 5,
+      "symbol": "AppAction.convert(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppAction.swift",
+      "line": 6,
+      "symbol": "AppAction.favouriteToggled(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppAction.swift",
+      "line": 7,
+      "symbol": "AppAction.generateDistanceList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppEnvironment.swift",
+      "line": 4,
+      "symbol": "AppEnvironment",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppReducer.swift",
+      "line": 7,
+      "symbol": "appReducer",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppState.swift",
+      "line": 6,
+      "symbol": "AppState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppState.swift",
+      "line": 10,
+      "symbol": "AppState.currentDistance",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/AppState.swift",
+      "line": 11,
+      "symbol": "AppState.historyDistance",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Distance.swift",
+      "line": 10,
+      "symbol": "Distance",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Distance.swift",
+      "line": 11,
+      "symbol": "Distance.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Distance.swift",
+      "line": 12,
+      "symbol": "Distance.unit",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Distance.swift",
+      "line": 13,
+      "symbol": "Distance.isFavourite",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Distance.swift",
+      "line": 15,
+      "symbol": "Distance.unitValues",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Pace.swift",
+      "line": 6,
+      "symbol": "Pace",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Pace.swift",
+      "line": 7,
+      "symbol": "Pace.time",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Pace.swift",
+      "line": 8,
+      "symbol": "Pace.unit",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Pace.swift",
+      "line": 9,
+      "symbol": "Pace.isFavourite",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Unit.swift",
+      "line": 4,
+      "symbol": "Unit",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Unit.swift",
+      "line": 5,
+      "symbol": "Unit.km",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Unit.swift",
+      "line": 6,
+      "symbol": "Unit.mile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Unit.swift",
+      "line": 8,
+      "symbol": "Unit.kmPerMile",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/application/domain/Unit.swift",
+      "line": 10,
+      "symbol": "Unit.factor(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/screens/Home.swift",
+      "line": 6,
+      "symbol": "Home",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/runitz/runitz/runitz/screens/Home.swift",
+      "line": 17,
+      "symbol": "Home_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/runitz/runitz"
+}
