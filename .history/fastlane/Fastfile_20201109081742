@@ -25,7 +25,7 @@ platform :ios do
 
   lane :run_pr_version do |options|
     save_version_token options
-    commit_and_push
+    commit_and_push_master
   end
 
   lane :run_master_build do
@@ -36,7 +36,7 @@ platform :ios do
     bump_build_number
     update_version
     generate_documentation
-    commit_and_push
+    commit_and_push_master
   end
 
   lane :release_beta do |options|
@@ -172,7 +172,7 @@ platform :ios do
     )
   end
 
-  private_lane :commit_and_push do
+  private_lane :commit_and_push_master do
     git_add(path: ".")
     
     git_commit(
