@@ -9,23 +9,34 @@ struct DistanceConversionView: View {
     let store: Store<AppState, AppAction>
 
     var body: some View {
-        VStack(spacing: 24.0) {
-            HStack {
-                Text("8 Kms")
-                Text("5 Miles")
-                Text("27000 feet")
-            }
-            Text("------------")
-            Text(" 5 ")
-            HStack {
-                Button("-") {
-                    print("JM: -> - tapped")
+        WithViewStore(self.store) { viewStore in
+            let valueKm = String(viewStore.currentDistance.distance(in: .km).round(to: 1))
+            let valueMile = String(viewStore.currentDistance.distance(in: .mile).round(to: 1))
+            let valueFeet = String(viewStore.currentDistance.distance(in: .feet).round(to: 1))
+
+            VStack(spacing: 24.0) {
+                HStack {
+                    Text("\(valueKm) \(Unit.km.rawValue)")
+                    Text("|")
+                    Text("\(valueMile) \(Unit.mile.rawValue)")
+                    Text("|")
+                    Text("\(valueFeet) \(Unit.feet.rawValue)")
                 }
-                Button("Km") {
-                    print("JM: -> Unit button tapped")
-                }
-                Button("+") {
-                    print("JM: -> + tapped")
+                Text("------------")
+                Text("\(String(viewStore.currentDistance.value.round(to: 1)))")
+                HStack {
+                    Button(" - ") {
+                        print("JM: -> - tapped")
+                        viewStore.send(.decrease(1))
+                    }
+                    Button(viewStore.currentDistance.unit.rawValue) {
+                        print("JM: -> Unit button tapped")
+                        viewStore.send(AppAction.switchUnit(viewStore.currentDistance.unit.next()))
+                    }
+                    Button(" + ") {
+                        print("JM: -> + tapped")
+                        viewStore.send(.increase(1))
+                    }
                 }
             }
         }
