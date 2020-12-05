@@ -15,7 +15,7 @@ struct RunitzApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView(store: store)
+            DistanceConversionView(store: store)
         }
     }
 
