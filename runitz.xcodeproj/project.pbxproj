@@ -16,7 +16,7 @@
 		CF886B75257BAE89001746D3 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B74257BAE89001746D3 /* Double+Round.swift */; };
 		CF886B7F257BAF98001746D3 /* DoubleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B7E257BAF98001746D3 /* DoubleExtensionsTests.swift */; };
 		CFF8818F255929810023E5E6 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8818E255929810023E5E6 /* UnitTests.swift */; };
-		CFF881A4255929A60023E5E6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF88197255929A60023E5E6 /* Home.swift */; };
+		CFF881A4255929A60023E5E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF88197255929A60023E5E6 /* HomeView.swift */; };
 		CFF881A5255929A60023E5E6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF88199255929A60023E5E6 /* AppState.swift */; };
 		CFF881A6255929A60023E5E6 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8819A255929A60023E5E6 /* AppReducer.swift */; };
 		CFF881A7255929A60023E5E6 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8819B255929A60023E5E6 /* AppAction.swift */; };
@@ -63,7 +63,7 @@
 		CF886B74257BAE89001746D3 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 		CF886B7E257BAF98001746D3 /* DoubleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionsTests.swift; sourceTree = "<group>"; };
 		CFF8818E255929810023E5E6 /* UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
-		CFF88197255929A60023E5E6 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CFF88197255929A60023E5E6 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CFF88199255929A60023E5E6 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CFF8819A255929A60023E5E6 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		CFF8819B255929A60023E5E6 /* AppAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 		CFF88196255929A60023E5E6 /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				CFF88197255929A60023E5E6 /* Home.swift */,
+				CFF88197255929A60023E5E6 /* HomeView.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 				CFF881A6255929A60023E5E6 /* AppReducer.swift in Sources */,
 				CFF881AA255929A60023E5E6 /* Pace.swift in Sources */,
 				CFF881A7255929A60023E5E6 /* AppAction.swift in Sources */,
-				CFF881A4255929A60023E5E6 /* Home.swift in Sources */,
+				CFF881A4255929A60023E5E6 /* HomeView.swift in Sources */,
 				CFF881B825592A150023E5E6 /* RunitzApp.swift in Sources */,
 				CFF881A9255929A60023E5E6 /* Unit.swift in Sources */,
 				CFF881A5255929A60023E5E6 /* AppState.swift in Sources */,
