@@ -3,8 +3,8 @@
 
 import Foundation
 
-struct Pace: Equatable {
-    let time: TimeInterval
-    let unit: Unit
-    let isFavourite: Bool
-}
+//struct Pace: Equatable {
+//    let time: TimeInterval
+//    let unit: Unit
+//    let isFavourite: Bool
+//}
