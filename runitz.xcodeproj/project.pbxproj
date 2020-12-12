@@ -15,6 +15,10 @@
 		CF886B6F257BAB5D001746D3 /* AppReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B6E257BAB5D001746D3 /* AppReducerTests.swift */; };
 		CF886B75257BAE89001746D3 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B74257BAE89001746D3 /* Double+Round.swift */; };
 		CF886B7F257BAF98001746D3 /* DoubleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B7E257BAF98001746D3 /* DoubleExtensionsTests.swift */; };
+		CFB2EA462584DFB6009556D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA452584DFB6009556D5 /* HomeView.swift */; };
+		CFB2EA4E2584E204009556D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA4D2584E204009556D5 /* SettingsView.swift */; };
+		CFB2EA532584E222009556D5 /* PaceConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA522584E222009556D5 /* PaceConversionView.swift */; };
+		CFB2EA5B2584E4C3009556D5 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA5A2584E4C3009556D5 /* AppVersion.swift */; };
 		CFF8818F255929810023E5E6 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8818E255929810023E5E6 /* UnitTests.swift */; };
 		CFF881A4255929A60023E5E6 /* DistanceConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF88197255929A60023E5E6 /* DistanceConversionView.swift */; };
 		CFF881A5255929A60023E5E6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF88199255929A60023E5E6 /* AppState.swift */; };
@@ -62,6 +66,10 @@
 		CF886B6E257BAB5D001746D3 /* AppReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducerTests.swift; sourceTree = "<group>"; };
 		CF886B74257BAE89001746D3 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 		CF886B7E257BAF98001746D3 /* DoubleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionsTests.swift; sourceTree = "<group>"; };
+		CFB2EA452584DFB6009556D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CFB2EA4D2584E204009556D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFB2EA522584E222009556D5 /* PaceConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceConversionView.swift; sourceTree = "<group>"; };
+		CFB2EA5A2584E4C3009556D5 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		CFF8818E255929810023E5E6 /* UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		CFF88197255929A60023E5E6 /* DistanceConversionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceConversionView.swift; sourceTree = "<group>"; };
 		CFF88199255929A60023E5E6 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -209,7 +217,10 @@
 		CFF88196255929A60023E5E6 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				CFB2EA452584DFB6009556D5 /* HomeView.swift */,
 				CFF88197255929A60023E5E6 /* DistanceConversionView.swift */,
+				CFB2EA522584E222009556D5 /* PaceConversionView.swift */,
+				CFB2EA4D2584E204009556D5 /* SettingsView.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -241,6 +252,7 @@
 			children = (
 				CF886B73257BAE60001746D3 /* extensions */,
 				CFF881A3255929A60023E5E6 /* Utilities.swift */,
+				CFB2EA5A2584E4C3009556D5 /* AppVersion.swift */,
 			);
 			path = environment;
 			sourceTree = "<group>";
@@ -413,8 +425,12 @@
 				CFF881A5255929A60023E5E6 /* AppState.swift in Sources */,
 				CFF881A8255929A60023E5E6 /* Distance.swift in Sources */,
 				CF886B75257BAE89001746D3 /* Double+Round.swift in Sources */,
+				CFB2EA462584DFB6009556D5 /* HomeView.swift in Sources */,
 				CFF881AD255929A60023E5E6 /* Utilities.swift in Sources */,
 				CFF881AC255929A60023E5E6 /* AppEnvironment.swift in Sources */,
+				CFB2EA5B2584E4C3009556D5 /* AppVersion.swift in Sources */,
+				CFB2EA4E2584E204009556D5 /* SettingsView.swift in Sources */,
+				CFB2EA532584E222009556D5 /* PaceConversionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

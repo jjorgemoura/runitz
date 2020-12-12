@@ -15,7 +15,7 @@ struct RunitzApp: App {
 
     var body: some Scene {
         WindowGroup {
-            DistanceConversionView(store: store)
+            HomeView(store: store)
         }
     }
 
@@ -26,6 +26,6 @@ struct RunitzApp: App {
     }
 
     private static func initEnvironment() -> AppEnvironment {
-        return AppEnvironment()
+        return AppEnvironment(version: AppVersion())
     }
 }

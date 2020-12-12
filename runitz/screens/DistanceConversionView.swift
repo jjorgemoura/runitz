@@ -17,24 +17,24 @@ struct DistanceConversionView: View {
             VStack(spacing: 24.0) {
                 HStack {
                     Text("\(valueKm) \(Unit.km.rawValue)")
+                        .font(.title)
                     Text("|")
                     Text("\(valueMile) \(Unit.mile.rawValue)")
+                        .font(.title)
                     Text("|")
                     Text("\(valueFeet) \(Unit.feet.rawValue)")
+                        .font(.title)
                 }
                 Text("------------")
                 Text("\(String(viewStore.currentDistance.value.round(to: 1)))")
                 HStack {
                     Button(" - ") {
-                        print("JM: -> - tapped")
                         viewStore.send(.decrease(1))
                     }
                     Button(viewStore.currentDistance.unit.rawValue) {
-                        print("JM: -> Unit button tapped")
                         viewStore.send(AppAction.switchUnit(viewStore.currentDistance.unit.next()))
                     }
                     Button(" + ") {
-                        print("JM: -> + tapped")
                         viewStore.send(.increase(1))
                     }
                 }
@@ -54,7 +54,7 @@ struct DistanceConversionView_Previews: PreviewProvider {
             )
         ),
         reducer: appReducer,
-        environment: AppEnvironment()
+        environment: AppEnvironment(version: AppVersion())
     )
 
     static var previews: some View {
