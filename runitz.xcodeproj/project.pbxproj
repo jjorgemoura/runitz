@@ -11,6 +11,7 @@
 		CF08847C255927C40091F0C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF08847B255927C40091F0C8 /* Preview Assets.xcassets */; };
 		CF088487255927C40091F0C8 /* RunitzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF088486255927C40091F0C8 /* RunitzTests.swift */; };
 		CF088492255927C40091F0C8 /* RunitzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF088491255927C40091F0C8 /* RunitzUITests.swift */; };
+		CF403CFA25861DA2004A0340 /* PaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF403CF925861DA2004A0340 /* PaceTests.swift */; };
 		CF886B6A257BA8FF001746D3 /* DistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B69257BA8FF001746D3 /* DistanceTests.swift */; };
 		CF886B6F257BAB5D001746D3 /* AppReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B6E257BAB5D001746D3 /* AppReducerTests.swift */; };
 		CF886B75257BAE89001746D3 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF886B74257BAE89001746D3 /* Double+Round.swift */; };
@@ -62,6 +63,7 @@
 		CF08848D255927C40091F0C8 /* runitzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runitzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF088491255927C40091F0C8 /* RunitzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunitzUITests.swift; sourceTree = "<group>"; };
 		CF088493255927C40091F0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF403CF925861DA2004A0340 /* PaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceTests.swift; sourceTree = "<group>"; };
 		CF886B69257BA8FF001746D3 /* DistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTests.swift; sourceTree = "<group>"; };
 		CF886B6E257BAB5D001746D3 /* AppReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducerTests.swift; sourceTree = "<group>"; };
 		CF886B74257BAE89001746D3 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
@@ -208,8 +210,9 @@
 		CFF8818D255929810023E5E6 /* domain */ = {
 			isa = PBXGroup;
 			children = (
-				CFF8818E255929810023E5E6 /* UnitTests.swift */,
 				CF886B69257BA8FF001746D3 /* DistanceTests.swift */,
+				CF403CF925861DA2004A0340 /* PaceTests.swift */,
+				CFF8818E255929810023E5E6 /* UnitTests.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			files = (
 				CF088487255927C40091F0C8 /* RunitzTests.swift in Sources */,
 				CF886B6A257BA8FF001746D3 /* DistanceTests.swift in Sources */,
+				CF403CFA25861DA2004A0340 /* PaceTests.swift in Sources */,
 				CF886B6F257BAB5D001746D3 /* AppReducerTests.swift in Sources */,
 				CFF8818F255929810023E5E6 /* UnitTests.swift in Sources */,
 				CF886B7F257BAF98001746D3 /* DoubleExtensionsTests.swift in Sources */,

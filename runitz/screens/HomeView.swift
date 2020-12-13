@@ -64,11 +64,8 @@ struct HomeView_Previews: PreviewProvider {
     static let demoStore = Store(
         initialState: AppState(
             id: UUID(),
-            currentDistance: Distance(
-                value: 5,
-                unit: .km,
-                isFavourite: true
-            )
+            currentDistance: Distance(value: 5, unit: .km, isFavourite: true),
+            currentPace: Pace(seconds: 300, unit: .km)
         ),
         reducer: appReducer,
         environment: AppEnvironment(version: AppVersion())

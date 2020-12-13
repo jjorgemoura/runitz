@@ -32,6 +32,7 @@ struct DistanceConversionView: View {
                         viewStore.send(.decrease(1))
                     }
                     Button(viewStore.currentDistance.unit.rawValue) {
+                        // TODO: Fix this. the report of the next unit is done in reducer, not here
                         viewStore.send(AppAction.switchUnit(viewStore.currentDistance.unit.next()))
                     }
                     Button(" + ") {
@@ -47,11 +48,8 @@ struct DistanceConversionView_Previews: PreviewProvider {
     static let demoStore = Store(
         initialState: AppState(
             id: UUID(),
-            currentDistance: Distance(
-                value: 5,
-                unit: .km,
-                isFavourite: true
-            )
+            currentDistance: Distance(value: 5, unit: .km, isFavourite: true),
+            currentPace: Pace(seconds: 300, unit: .km)
         ),
         reducer: appReducer,
         environment: AppEnvironment(version: AppVersion())
