@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pace Structure Reference</title>
+    <title>SettingsOptionGroup Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/Pace" class="dashAnchor"></a>
-    <a title="Pace Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/SettingsOptionGroup" class="dashAnchor"></a>
+    <a title="SettingsOptionGroup Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
@@ -30,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Pace Structure Reference
+        SettingsOptionGroup Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -139,18 +139,18 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Pace</h1>
+            <h1>SettingsOptionGroup</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Pace</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">SettingsOptionGroup</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
 
                 </div>
               </div>
             <p>Undocumented</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/Pace.swift#L6-L14">Show on GitHub</a>
+                <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/SettingsOptions.swift#L11-L21">Show on GitHub</a>
               </div>
           </section>
           <section class="section task-group-section">
@@ -159,9 +159,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6runitz4PaceV7secondsSdvp"></a>
-                    <a name="//apple_ref/swift/Property/seconds" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6runitz4PaceV7secondsSdvp">seconds</a>
+                    <a name="/s:s12IdentifiableP2id2IDQzvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s12IdentifiableP2id2IDQzvp">id</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -169,19 +169,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">UUID</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/Pace.swift#L">Show on GitHub</a>
+                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/SettingsOptions.swift#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -189,9 +188,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6runitz4PaceV4unitAA4UnitOvp"></a>
-                    <a name="//apple_ref/swift/Property/unit" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6runitz4PaceV4unitAA4UnitOvp">unit</a>
+                    <a name="/s:6runitz19SettingsOptionGroupV7optionsSayAA0bC0VGvp"></a>
+                    <a name="//apple_ref/swift/Property/options" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6runitz19SettingsOptionGroupV7optionsSayAA0bC0VGvp">options</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -206,12 +205,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt"><a href="../Enums/Unit.html">Unit</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/SettingsOption.html">SettingsOption</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/Pace.swift#L">Show on GitHub</a>
+                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/SettingsOptions.swift#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -219,9 +218,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6runitz4PaceV4pace2inSdAA4UnitO_tF"></a>
-                    <a name="//apple_ref/swift/Method/pace(in:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6runitz4PaceV4pace2inSdAA4UnitO_tF">pace(in:<wbr>)</a>
+                    <a name="/s:6runitz19SettingsOptionGroupV5titleSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6runitz19SettingsOptionGroupV5titleSSSgvp">title</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -236,12 +235,72 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pace</span><span class="p">(</span><span class="k">in</span> <span class="nv">newUnit</span><span class="p">:</span> <span class="kt"><a href="../Enums/Unit.html">Unit</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TimeInterval</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/Pace.swift#L10-L13">Show on GitHub</a>
+                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/SettingsOptions.swift#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6runitz19SettingsOptionGroupV6footerSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/footer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6runitz19SettingsOptionGroupV6footerSSSgvp">footer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">footer</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/SettingsOptions.swift#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6runitz19SettingsOptionGroupV9isVisibleSbyF"></a>
+                    <a name="//apple_ref/swift/Method/isVisible()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6runitz19SettingsOptionGroupV9isVisibleSbyF">isVisible()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isVisible</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/jjorgemoura/runitz/tree/master/runitz/application/domain/SettingsOptions.swift#L17-L20">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
