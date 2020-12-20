@@ -20,6 +20,7 @@
 		CFB2EA4E2584E204009556D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA4D2584E204009556D5 /* SettingsView.swift */; };
 		CFB2EA532584E222009556D5 /* PaceConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA522584E222009556D5 /* PaceConversionView.swift */; };
 		CFB2EA5B2584E4C3009556D5 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA5A2584E4C3009556D5 /* AppVersion.swift */; };
+		CFE7B919258FACF6003627B1 /* Unit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */; };
 		CFF8818F255929810023E5E6 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8818E255929810023E5E6 /* UnitTests.swift */; };
 		CFF881A4255929A60023E5E6 /* DistanceConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF88197255929A60023E5E6 /* DistanceConversionView.swift */; };
 		CFF881A5255929A60023E5E6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF88199255929A60023E5E6 /* AppState.swift */; };
@@ -72,6 +73,7 @@
 		CFB2EA4D2584E204009556D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CFB2EA522584E222009556D5 /* PaceConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceConversionView.swift; sourceTree = "<group>"; };
 		CFB2EA5A2584E4C3009556D5 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit+Utilities.swift"; sourceTree = "<group>"; };
 		CFF8818E255929810023E5E6 /* UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		CFF88197255929A60023E5E6 /* DistanceConversionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceConversionView.swift; sourceTree = "<group>"; };
 		CFF88199255929A60023E5E6 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -198,6 +200,14 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		CFE7B917258FACD9003627B1 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		CFF8818C255929810023E5E6 /* application */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		CFF8819C255929A60023E5E6 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				CFE7B917258FACD9003627B1 /* extensions */,
 				CFF8819D255929A60023E5E6 /* Distance.swift */,
 				CFF8819F255929A60023E5E6 /* Pace.swift */,
 				CFF8819E255929A60023E5E6 /* Unit.swift */,
@@ -425,6 +436,7 @@
 				CFF881A4255929A60023E5E6 /* DistanceConversionView.swift in Sources */,
 				CFF881B825592A150023E5E6 /* RunitzApp.swift in Sources */,
 				CFF881A9255929A60023E5E6 /* Unit.swift in Sources */,
+				CFE7B919258FACF6003627B1 /* Unit+Utilities.swift in Sources */,
 				CFF881A5255929A60023E5E6 /* AppState.swift in Sources */,
 				CFF881A8255929A60023E5E6 /* Distance.swift in Sources */,
 				CF886B75257BAE89001746D3 /* Double+Round.swift in Sources */,

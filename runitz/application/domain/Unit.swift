@@ -23,15 +23,4 @@ enum Unit: String, CaseIterable, Equatable {
         case (.feet, .feet): return 1
         }
     }
-
-    func next() -> Unit {
-        switch self {
-        case .km:
-            return .mile
-        case .mile:
-            return .feet
-        case .feet:
-            return .km
-        }
-    }
 }

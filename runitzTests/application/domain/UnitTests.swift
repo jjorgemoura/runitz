@@ -14,7 +14,7 @@ class UnitTests: XCTestCase {
         XCTAssertEqual(multiplicationFactor, 1)
     }
 
-    func testKmToMileConvertionIsZeroSix() {
+    func testKmToMileConvertionIsZeroSixTwo() {
         let sut = Unit.km
 
         let multiplicationFactor = sut.factor(to: .mile)
@@ -54,7 +54,7 @@ class UnitTests: XCTestCase {
         XCTAssertEqual(multiplicationFactor, 5280)
     }
 
-    func testFeetToKmConvertionIsZeroPointXXXX() {
+    func testFeetToKmConvertionIsZeroPointZeroZeroZeroThree() {
         let sut = Unit.feet
 
         let multiplicationFactor = sut.factor(to: .km)
@@ -62,7 +62,7 @@ class UnitTests: XCTestCase {
         XCTAssertEqual(multiplicationFactor.round(to: 8), 0.00030480.round(to: 8))
     }
 
-    func testFeetToMileConvertionIsZeroPintYYY() {
+    func testFeetToMileConvertionIsZeroPointZeroZeroZeroOne() {
         let sut = Unit.feet
 
         let multiplicationFactor = sut.factor(to: .mile)
@@ -76,5 +76,52 @@ class UnitTests: XCTestCase {
         let multiplicationFactor = sut.factor(to: .feet)
 
         XCTAssertEqual(multiplicationFactor, 1)
+    }
+
+    func testNextDistanceUnitOfKmIsMile() {
+        let sut = Unit.km
+
+        let nextDistance = sut.nextDistanceUnit()
+
+        XCTAssertEqual(nextDistance, Unit.mile)
+    }
+
+    func testNextDistanceUnitOfMileIsFeet() {
+        let sut = Unit.mile
+
+        let nextDistance = sut.nextDistanceUnit()
+
+        XCTAssertEqual(nextDistance, Unit.feet)
+    }
+
+    func testNextDistanceUnitOfFeetIsKm() {
+        let sut = Unit.feet
+
+        let nextDistance = sut.nextDistanceUnit()
+
+        XCTAssertEqual(nextDistance, Unit.km)}
+
+    func testNextPaceUnitOfKmIsMile() {
+        let sut = Unit.km
+
+        let nextDistance = sut.nextPaceUnit()
+
+        XCTAssertEqual(nextDistance, Unit.mile)
+    }
+
+    func testNextPaceUnitOfMileIsKm() {
+        let sut = Unit.mile
+
+        let nextDistance = sut.nextPaceUnit()
+
+        XCTAssertEqual(nextDistance, Unit.km)
+    }
+
+    func testNextPaceceUnitOfFeetIsKm() {
+        let sut = Unit.feet
+
+        let nextDistance = sut.nextPaceUnit()
+
+        XCTAssertEqual(nextDistance, Unit.km)
     }
 }
