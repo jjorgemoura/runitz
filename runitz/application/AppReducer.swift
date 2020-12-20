@@ -5,22 +5,30 @@ import Foundation
 import ComposableArchitecture
 
 let appReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, environment in
+    print(environment)
 
     switch action {
-    case let .convert(distanceValue, unit):
-        print(distanceValue)
-
-        let distance = Distance(value: Double(distanceValue), unit: unit, isFavourite: false)
-        state.currentDistance = distance
-
+    case .increaseDistance(let value):
+        state.currentDistance.value += Double(value)
+        return .none
+    case .decreaseDistance(let value):
+        guard state.currentDistance.value > 0 else { return .none }
+        state.currentDistance.value -= Double(value)
+        return .none
+    case .switchToNextDistanceUnit:
+        state.currentDistance.unit = state.currentDistance.unit.nextDistanceUnit()
         return .none
 
-    case .favouriteToggled(let distance):
-        print(distance)
-//        distance.isFavourite.toggle()
+    case .increasePace(let value):
+        state.currentPace.seconds += Double(value)
         return .none
-
-    case .generateDistanceList:
+    case .decreasePace(let value):
+        guard state.currentPace.seconds > 0 else { return .none }
+        state.currentPace.seconds -= Double(value)
+        return .none
+    case .switchToNextPaceUnit:
+        state.currentPace.unit = state.currentPace.unit.nextPaceUnit()
         return .none
     }
 }
+.debug()

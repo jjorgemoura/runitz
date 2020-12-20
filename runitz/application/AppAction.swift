@@ -2,11 +2,11 @@
 // Copyright © 2020  Jorge Moura. All rights reserved.
 
 enum AppAction: Equatable {
-    case convert(Int, Unit)
-    case favouriteToggled(Distance)
-    case generateDistanceList
+    case increaseDistance(Int)
+    case decreaseDistance(Int)
+    case switchToNextDistanceUnit
 
-    //    case convert(Pace)
-    //    case addFavourite(Pace)
-//    case removeFavourite(Pace)
+    case increasePace(Int)
+    case decreasePace(Int)
+    case switchToNextPaceUnit
 }

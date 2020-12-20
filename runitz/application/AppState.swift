@@ -5,12 +5,8 @@ import Foundation
 
 struct AppState: Identifiable, Equatable {
     var id: UUID
-
-//    var defaultDistance: Distance
     var currentDistance: Distance
-    var historyDistance: [Distance]
+    var currentPace: Pace
 
-//    var defaultPace: Pace
-//    var currentPace: Pace
-//    var historyPace: [Pace]
+    var settings: SettingsOptions
 }

@@ -65,7 +65,7 @@ opt_in_rules:
  # - no_grouping_extension
  - nslocalizedstring_key
  - nslocalizedstring_require_bundle
- - number_separator
+ # - number_separator
  - object_literal
  - operator_usage_whitespace
  - optional_enum_case_matching
@@ -74,7 +74,7 @@ opt_in_rules:
  - pattern_matching_keywords
  - prefer_self_type_over_type_of_self
  - prefer_zero_over_explicit_init
- - prefixed_toplevel_constant
+#  - prefixed_toplevel_constant
  - private_action
  - private_outlet
  # - prohibited_interface_builder
@@ -105,7 +105,7 @@ opt_in_rules:
  - unused_declaration
  - unused_import
  - vertical_parameter_alignment_on_call
- - vertical_whitespace_between_cases
+#  - vertical_whitespace_between_cases
  - vertical_whitespace_closing_braces
  # - vertical_whitespace_opening_braces
  - xct_specific_matcher
@@ -118,6 +118,10 @@ excluded:
 #included:
 #    - runitz
 #    - runitzTests
+
+closure_body_length:
+  warning: 50
+  error: 60
 
 line_length:
   warning: 190
