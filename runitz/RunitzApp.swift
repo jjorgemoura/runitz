@@ -22,10 +22,13 @@ struct RunitzApp: App {
     // MARK: - private methods
 
     private static func initState() -> AppState {
-        return AppState(id: UUID(), currentDistance: Distance(value: 5, unit: .km), currentPace: Pace(seconds: 300, unit: .km))
+        let initialDistance = Distance(value: 5, unit: .km)
+        let initialPace = Pace(seconds: 300, unit: .km)
+        let initialSettings = SettingsOptionsFactory().defaultSettingsOptions()
+        return AppState(id: UUID(), currentDistance: initialDistance, currentPace: initialPace, settings: initialSettings)
     }
 
     private static func initEnvironment() -> AppEnvironment {
-        return AppEnvironment(version: AppVersion())
+        return AppEnvironment()
     }
 }

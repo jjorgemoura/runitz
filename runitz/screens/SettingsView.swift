@@ -9,12 +9,22 @@ struct SettingsView: View {
     let store: Store<AppState, AppAction>
 
     var body: some View {
-        VStack {
-            Text("Settings")
-            Text("xxx")
-            Text("3rd Party Dependencies")
-            Text("Privacy")
-            Text("Version")
+        WithViewStore(self.store) { viewStore in
+
+            List {
+                ForEach(viewStore.settings.optionGroups) { group in
+                    Section(header: Text(group.title ?? ""),
+                            footer: Text(group.footer ?? "")) {
+                        ForEach(group.options) { item in
+                            Text(item.title)
+                        }
+                    }
+                }
+            }
+            .listStyle(GroupedListStyle())
+
+            Text("Version Number")
+            Text(viewStore.settings.systemInfo.version)
         }
     }
 }
@@ -24,10 +34,11 @@ struct SettingsView_Previews: PreviewProvider {
         initialState: AppState(
             id: UUID(),
             currentDistance: Distance(value: 5, unit: .km),
-            currentPace: Pace(seconds: 300, unit: .km)
+            currentPace: Pace(seconds: 300, unit: .km),
+            settings: SettingsOptionsFactory().defaultSettingsOptions()
         ),
         reducer: appReducer,
-        environment: AppEnvironment(version: AppVersion())
+        environment: AppEnvironment()
     )
 
     static var previews: some View {

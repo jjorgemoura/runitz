@@ -18,6 +18,17 @@ let appReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, e
     case .switchToNextDistanceUnit:
         state.currentDistance.unit = state.currentDistance.unit.nextDistanceUnit()
         return .none
+
+    case .increasePace(let value):
+        state.currentPace.seconds += Double(value)
+        return .none
+    case .decreasePace(let value):
+        guard state.currentPace.seconds > 0 else { return .none }
+        state.currentPace.seconds -= Double(value)
+        return .none
+    case .switchToNextPaceUnit:
+        state.currentPace.unit = state.currentPace.unit.nextPaceUnit()
+        return .none
     }
 }
 .debug()

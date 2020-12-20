@@ -5,4 +5,8 @@ enum AppAction: Equatable {
     case increaseDistance(Int)
     case decreaseDistance(Int)
     case switchToNextDistanceUnit
+
+    case increasePace(Int)
+    case decreasePace(Int)
+    case switchToNextPaceUnit
 }

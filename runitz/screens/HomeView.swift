@@ -35,7 +35,7 @@ struct HomeView: View {
                         label: { Text("Favourites") }
                     )
                     NavigationLink(
-                        destination: DistanceConversionView(store: store),
+                        destination: PaceConversionView(store: store),
                         label: { Text("Convert") }
                     )
                 }
@@ -65,10 +65,11 @@ struct HomeView_Previews: PreviewProvider {
         initialState: AppState(
             id: UUID(),
             currentDistance: Distance(value: 5, unit: .km),
-            currentPace: Pace(seconds: 300, unit: .km)
+            currentPace: Pace(seconds: 300, unit: .km),
+            settings: SettingsOptionsFactory().defaultSettingsOptions()
         ),
         reducer: appReducer,
-        environment: AppEnvironment(version: AppVersion())
+        environment: AppEnvironment()
     )
 
     static var previews: some View {

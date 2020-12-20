@@ -8,8 +8,5 @@ struct AppState: Identifiable, Equatable {
     var currentDistance: Distance
     var currentPace: Pace
 
-//    var defaultDistance: Distance
-//    var historyDistance: [Distance]
-//    var defaultPace: Pace
-//    var historyPace: [Pace]
+    var settings: SettingsOptions
 }

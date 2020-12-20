@@ -4,8 +4,8 @@
 import Foundation
 
 struct Pace: Equatable {
-    let seconds: TimeInterval
-    let unit: Unit
+    var seconds: TimeInterval
+    var unit: Unit
 
     func pace(in newUnit: Unit) -> TimeInterval {
         let newPace = seconds * newUnit.factor(to: unit)
