@@ -6,12 +6,12 @@ import XCTest
 
 class AppReducerTests: XCTestCase {
 
-    private let environment = AppEnvironment(version: AppVersion())
+    private let environment = AppEnvironment()
     private let defaultPace = Pace(seconds: 0, unit: .km)
 
     func testWhenIncreaseByOneStateGetsUpdated() {
         let distance = Distance(value: 0, unit: .km)
-        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace)
+        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace, settings: SettingsOptionsFactory().defaultSettingsOptions())
 
         _ = appReducer(&state, .increaseDistance(1), environment)
 
@@ -20,7 +20,7 @@ class AppReducerTests: XCTestCase {
 
     func testWhenIncreaseByMinusOneStateGetsUpdated() {
         let distance = Distance(value: 1, unit: .km)
-        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace)
+        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace, settings: SettingsOptionsFactory().defaultSettingsOptions())
 
         _ = appReducer(&state, .increaseDistance(-1), environment)
 
@@ -29,7 +29,7 @@ class AppReducerTests: XCTestCase {
 
     func testWhenIncreaseByTenStateGetsUpdated() {
         let distance = Distance(value: 5, unit: .km)
-        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace)
+        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace, settings: SettingsOptionsFactory().defaultSettingsOptions())
 
         _ = appReducer(&state, .increaseDistance(10), environment)
 
@@ -38,7 +38,7 @@ class AppReducerTests: XCTestCase {
 
     func testWhenDecreaseByOneStateGetsUpdated() {
         let distance = Distance(value: 5, unit: .km)
-        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace)
+        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace, settings: SettingsOptionsFactory().defaultSettingsOptions())
 
         _ = appReducer(&state, .decreaseDistance(1), environment)
 
@@ -47,7 +47,7 @@ class AppReducerTests: XCTestCase {
 
     func testWhenDecreaseByMinusOneStateGetsUpdated() {
         let distance = Distance(value: 5, unit: .km)
-        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace)
+        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace, settings: SettingsOptionsFactory().defaultSettingsOptions())
 
         _ = appReducer(&state, .decreaseDistance(-1), environment)
 
@@ -56,7 +56,7 @@ class AppReducerTests: XCTestCase {
 
     func testWhenDecreaseByTenStateGetsUpdated() {
         let distance = Distance(value: 50, unit: .km)
-        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace)
+        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace, settings: SettingsOptionsFactory().defaultSettingsOptions())
 
         _ = appReducer(&state, .decreaseDistance(10), environment)
 
@@ -65,7 +65,7 @@ class AppReducerTests: XCTestCase {
 
     func testWhenSwitchKmsToMilesThenStateGetsUpdated() {
         let distance = Distance(value: 80, unit: .km)
-        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace)
+        var state = AppState(id: UUID(), currentDistance: distance, currentPace: defaultPace, settings: SettingsOptionsFactory().defaultSettingsOptions())
 
         _ = appReducer(&state, .switchToNextDistanceUnit, environment)
 

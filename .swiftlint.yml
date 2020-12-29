@@ -115,10 +115,6 @@ excluded:
   - docs
   - fastlane
 
-#included:
-#    - runitz
-#    - runitzTests
-
 closure_body_length:
   warning: 50
   error: 60
