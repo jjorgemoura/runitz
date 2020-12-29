@@ -37,14 +37,14 @@ jobs:
           format: html
           inputs: ${{ env.SOURCE_FOLDER }}
           module-name: ${{ env.NAME }}
-          output: docs
+          output: Documentation
 
       - name: Update Permissions
-        run: 'sudo chown --recursive $USER docs'
+        run: 'sudo chown --recursive $USER Documentation'
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: docs
+          FOLDER: Documentation
