@@ -14,19 +14,20 @@ jobs:
     runs-on: macOS-latest
 
     steps:
+      env:
+          XCODE_PROJECT: ${{env.PROJECT}}
+          XCODE_SCHEME: ${{env.SCHEME}}
+
     - name: Checkout
       uses: actions/checkout@v2
 
     - name: Build
       uses: devbotsxyz/xcode-build@v1
 
-    # - name: Testing 
-    #   uses: devbotsxyz/xcode-test@v1
-
     - name: "Testing"
       uses: sersoft-gmbh/xcodebuild-action@v1
       with:
-        project: $PROJECT
-        scheme: $SCHEME
+        project: $XCODE_PROJECT
+        scheme: $XCODE_SCHEME
         destination: platform=macOS
         action: test
