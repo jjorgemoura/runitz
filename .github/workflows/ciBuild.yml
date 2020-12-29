@@ -28,3 +28,6 @@ jobs:
           configuration: debug
           destination: platform=iOS Simulator,name=iPhone 12 Pro,OS=latest
           action: build, test
+
+      - name: "Manual Testing"
+        run: xcodebuild clean build test -project runitz.xcodeproj  -scheme runitz -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=latest"
