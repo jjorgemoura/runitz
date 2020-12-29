@@ -14,11 +14,6 @@ jobs:
     runs-on: macOS-latest
 
     steps:
-      - name: Set Environment Variables
-        env:
-          XCODE_PROJECT: ${{env.PROJECT}}
-          XCODE_SCHEME: ${{env.SCHEME}}
-
       - name: Checkout
         uses: actions/checkout@v2
 
@@ -26,6 +21,9 @@ jobs:
         uses: devbotsxyz/xcode-build@v1
 
       - name: "Testing"
+        env:
+          XCODE_PROJECT: ${{env.PROJECT}}
+          XCODE_SCHEME: ${{env.SCHEME}}
         uses: sersoft-gmbh/xcodebuild-action@v1
         with:
           project: $XCODE_PROJECT
