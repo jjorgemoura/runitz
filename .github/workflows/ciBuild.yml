@@ -17,17 +17,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # - name: Build
-      #   uses: devbotsxyz/xcode-build@v1
-
-      # - name: "Testing"
-      #   uses: sersoft-gmbh/xcodebuild-action@v1
-      #   with:
-      #     project: ${{ env.PROJECT }}
-      #     scheme: ${{ env.SCHEME }}
-      #     configuration: debug
-      #     destination: platform=iOS Simulator,name=iPhone 12 Pro,OS=latest
-      #     action: build, test
-
       - name: "Manual Testing"
-        run: xcodebuild clean build test -project runitz.xcodeproj  -scheme runitz -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=latest"
+        run: xcodebuild clean build test -project ${{ PROJECT }} -scheme ${{ SCHEME }} -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=latest" | xcpretty
