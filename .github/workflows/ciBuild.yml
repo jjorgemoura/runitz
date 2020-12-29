@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 env:
-  PROJECT: runitz
+  PROJECT: runitz.xcodeproj
   SCHEME: runitz
 
 jobs:
@@ -17,16 +17,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Build
-        uses: devbotsxyz/xcode-build@v1
+      # - name: Build
+      #   uses: devbotsxyz/xcode-build@v1
 
       - name: "Testing"
-        env:
-          XCODE_PROJECT: ${{ env.PROJECT }}
-          XCODE_SCHEME: ${{ env.SCHEME }}
         uses: sersoft-gmbh/xcodebuild-action@v1
         with:
           project: ${{ env.PROJECT }}
-          scheme: ${{ env.XCODE_SCHEME }}
-          destination: platform=macOS
+          scheme: ${{ env.SCHEME }}
+          configuration: debug
+          destination: platform=iOS Simulator,name=iPhone 12 Pro,OS=latest
           action: test
