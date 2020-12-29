@@ -17,8 +17,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # - name: Build
-      #   uses: devbotsxyz/xcode-build@v1
+      - name: Build
+        uses: devbotsxyz/xcode-build@v1
 
       - name: "Testing"
         uses: sersoft-gmbh/xcodebuild-action@v1
