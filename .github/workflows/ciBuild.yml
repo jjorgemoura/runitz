@@ -17,8 +17,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Build
-        uses: devbotsxyz/xcode-build@v1
+      # - name: Build
+      #   uses: devbotsxyz/xcode-build@v1
 
       - name: "Testing"
         uses: sersoft-gmbh/xcodebuild-action@v1
@@ -27,4 +27,4 @@ jobs:
           scheme: ${{ env.SCHEME }}
           configuration: debug
           destination: platform=iOS Simulator,name=iPhone 12 Pro,OS=latest
-          action: test
+          action: build, test
