@@ -1,7 +1,8 @@
 //
 // Copyright © 2020  Jorge Moura. All rights reserved.
 
-enum AppAction: Equatable {
+/// Enumeration representing all the top level actions.
+public enum AppAction: Equatable {
     case increaseDistance(Int)
     case decreaseDistance(Int)
     case switchToNextDistanceUnit

@@ -4,26 +4,24 @@ on:
   push:
     branches: [ master ]
 
+env:
+  PROJECT: runitz.xcodeproj
+  SCHEME: runitz
+  NAME: runitz
+  SOURCE_FOLDER: runitz
+
 jobs:
-  masterBuild:
-    name: Master Build
+  unitTests:
+    name: Unit Tests
     runs-on: macOS-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Build
-      uses: devbotsxyz/xcode-build@v1
-
-    - name: "Testing"
-      uses: sersoft-gmbh/xcodebuild-action@v1
-      with:
-        project: $PROJECT
-        scheme: $SCHEME
-        destination: platform=macOS
-        action: test
-
+      - name: "Manual Testing"
+        run: xcodebuild clean build test -project ${{ env.PROJECT }} -scheme ${{ env.SCHEME }} -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=latest" | xcpretty
+        
   documentation:
     name: Generate and Deploy Documentation
     runs-on: ubuntu-latest
@@ -35,18 +33,18 @@ jobs:
       - name: Generate Documentation
         uses: SwiftDocOrg/swift-doc@master
         with:
-          base-url: /swift-composable-architecture/
+          # base-url: /swift-composable-architecture/
           format: html
-          inputs: Sources/ComposableArchitecture
-          module-name: ComposableArchitecture
-          output: Documentation
+          inputs: ${{ env.SOURCE_FOLDER }}
+          module-name: ${{ env.NAME }}
+          output: docs
 
       - name: Update Permissions
-        run: 'sudo chown --recursive $USER Documentation'
+        run: 'sudo chown --recursive $USER docs'
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: Documentation
+          FOLDER: docs
