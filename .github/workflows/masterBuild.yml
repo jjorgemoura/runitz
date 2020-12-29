@@ -12,11 +12,41 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+
+    - name: Build
+      uses: devbotsxyz/xcode-build@v1
+
+    - name: "Testing"
+      uses: sersoft-gmbh/xcodebuild-action@v1
       with:
-        ref: ${{ github.event.pull_request.head.ref }}
+        project: $PROJECT
+        scheme: $SCHEME
+        destination: platform=macOS
+        action: test
 
-    - name: Bundle Update 
-      run: bundle update --bundler
+  documentation:
+    name: Generate and Deploy Documentation
+    runs-on: ubuntu-latest
 
-    - name: Run Master Build
-      run: bundle exec fastlane run_master_build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Generate Documentation
+        uses: SwiftDocOrg/swift-doc@master
+        with:
+          base-url: /swift-composable-architecture/
+          format: html
+          inputs: Sources/ComposableArchitecture
+          module-name: ComposableArchitecture
+          output: Documentation
+
+      - name: Update Permissions
+        run: 'sudo chown --recursive $USER Documentation'
+        
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: Documentation

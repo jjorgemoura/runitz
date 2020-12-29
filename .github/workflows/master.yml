@@ -1,0 +1,22 @@
+# name: Master
+
+# on:
+#   push:
+#     branches: [ master ]
+
+# jobs:
+#   masterBuild:
+#     name: Master Build
+#     runs-on: macOS-latest
+
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2
+#       with:
+#         ref: ${{ github.event.pull_request.head.ref }}
+
+#     - name: Bundle Update 
+#       run: bundle update --bundler
+
+#     - name: Run Master Build
+#       run: bundle exec fastlane run_master_build
