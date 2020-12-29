@@ -1,6 +1,0 @@
-app_identifier "com.jjorgemoura.runitz"
-
-apple_id ENV["FASTLANE_APPLEID"]
-team_id ENV["FASTLANE_TEAMID"]
-
-#itc_team_id ENV["FASTLANE_ITC_TEAM_ID"]
