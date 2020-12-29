@@ -26,7 +26,7 @@ jobs:
           XCODE_SCHEME: ${{ env.SCHEME }}
         uses: sersoft-gmbh/xcodebuild-action@v1
         with:
-          project: $XCODE_PROJECT
-          scheme: $XCODE_SCHEME
+          project: ${{ env.PROJECT }}
+          scheme: ${{ env.XCODE_SCHEME }}
           destination: platform=macOS
           action: test
