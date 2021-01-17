@@ -15,29 +15,32 @@ struct DistanceConversionView: View {
             let valueFeet = String(viewStore.currentDistance.distance(in: .feet).round(to: 1))
 
             VStack(spacing: 24.0) {
+                BannerText(data: [
+                    "\(valueKm) \(Unit.km.rawValue)",
+                    "\(valueMile) \(Unit.mile.rawValue)",
+                    "\(valueFeet) \(Unit.feet.rawValue)"
+                ])
+                Spacer()
                 HStack {
-                    Text("\(valueKm) \(Unit.km.rawValue)")
-                        .font(.title)
-                    Text("|")
-                    Text("\(valueMile) \(Unit.mile.rawValue)")
-                        .font(.title)
-                    Text("|")
-                    Text("\(valueFeet) \(Unit.feet.rawValue)")
-                        .font(.title)
+                    Button(action: { viewStore.send(.decreaseDistance(1)) },
+                           label: { StepIncrementLabel(type: .decrement) })
+                    Text("\(String(viewStore.currentDistance.value.round(to: 1)))")
+                        .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
+                        .foregroundColor(.green)
+                        .background(Color.orange)
+                        .font(Font.title2.weight(.semibold))
+                        .cornerRadius(3.0)
+                    Button(action: { viewStore.send(.increaseDistance(1)) },
+                           label: { StepIncrementLabel(type: .increment) })
                 }
-                Text("------------")
-                Text("\(String(viewStore.currentDistance.value.round(to: 1)))")
-                HStack {
-                    Button(" - ") {
-                        viewStore.send(.decreaseDistance(1))
-                    }
-                    Button(viewStore.currentDistance.unit.rawValue) {
-                        viewStore.send(AppAction.switchToNextDistanceUnit)
-                    }
-                    Button(" + ") {
-                        viewStore.send(.increaseDistance(1))
-                    }
+                Button(viewStore.currentDistance.unit.rawValue) {
+                    viewStore.send(AppAction.switchToNextDistanceUnit)
                 }
+                .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
+                .foregroundColor(.gray)
+                .background(Color.red)
+                .font(Font.title2.weight(.semibold))
+                Spacer()
             }
         }
     }

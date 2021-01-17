@@ -22,7 +22,6 @@ struct SettingsView: View {
                 }
             }
             .listStyle(GroupedListStyle())
-
             Text("Version Number")
             Text(viewStore.settings.systemInfo.version)
         }
