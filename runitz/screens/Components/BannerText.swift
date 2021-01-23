@@ -30,8 +30,10 @@ struct BannerText_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             BannerText(data: ["5.00 Km", "3.00 miles", "14000 feet"])
+                .previewLayout(.sizeThatFits)
             BannerText(data: ["5.00 Km | ---"])
                 .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
         }
     }
 }

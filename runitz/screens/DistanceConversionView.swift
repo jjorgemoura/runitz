@@ -24,22 +24,18 @@ struct DistanceConversionView: View {
                 HStack {
                     Button(action: { viewStore.send(.decreaseDistance(1)) },
                            label: { StepIncrementLabel(type: .decrement) })
-                    Text("\(String(viewStore.currentDistance.value.round(to: 1)))")
-                        .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
-                        .foregroundColor(.green)
-                        .background(Color.orange)
-                        .font(Font.title2.weight(.semibold))
-                        .cornerRadius(3.0)
+                    DistanceController(distance: "\(String(viewStore.currentDistance.value.round(to: 1)))")
                     Button(action: { viewStore.send(.increaseDistance(1)) },
                            label: { StepIncrementLabel(type: .increment) })
                 }
-                Button(viewStore.currentDistance.unit.rawValue) {
-                    viewStore.send(AppAction.switchToNextDistanceUnit)
-                }
-                .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
-                .foregroundColor(.gray)
-                .background(Color.red)
-                .font(Font.title2.weight(.semibold))
+//                Button(viewStore.currentDistance.unit.rawValue) {
+//                    viewStore.send(AppAction.switchToNextDistanceUnit)
+//                }
+//                .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
+//                .foregroundColor(.gray)
+//                .background(Color.red)
+//                .font(Font.title2.weight(.semibold))
+                UnitSwitchButton(unit: viewStore.currentDistance.unit.rawValue)
                 Spacer()
             }
         }

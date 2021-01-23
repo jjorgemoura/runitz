@@ -15,7 +15,6 @@ struct SettingsOptionGroup: Equatable, Identifiable {
     let footer: String?
 
     func isVisible() -> Bool {
-//        return options.map { $0.isVisible }.reduce(true) { $0 && $1 }
         return options.map { $0.isVisible }.allSatisfy { $0 }
     }
 }
@@ -26,7 +25,7 @@ struct SettingsOption: Equatable, Identifiable {
     let description: String?
     let accessoryType: SettingsOptionAccessoryType
     let isVisible: Bool
-//    let clickEvent: Event?
+    let clickEvent: AppAction?
 //    let options: [SettingsOptionsKey]?
 }
 

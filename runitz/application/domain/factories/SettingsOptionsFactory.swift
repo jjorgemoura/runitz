@@ -30,41 +30,47 @@ struct SettingsOptionsFactory {
         return SettingsOption(title: "Mode",
                               description: nil,
                               accessoryType: .none,
-                              isVisible: true)
+                              isVisible: true,
+                              clickEvent: nil)
     }
 
     private func settingsOptionPrivacyPolicy() -> SettingsOption {
         return SettingsOption(title: "Privacy Policy",
                               description: nil,
                               accessoryType: .none,
-                              isVisible: true)
+                              isVisible: true,
+                              clickEvent: nil)
     }
 
     private func settingsOptionGithub() -> SettingsOption {
         return SettingsOption(title: "Github",
                               description: nil,
                               accessoryType: .none,
-                              isVisible: true)
+                              isVisible: true,
+                              clickEvent: nil)
     }
 
     private func settingsOptionFaq() -> SettingsOption {
         return SettingsOption(title: "FAQ",
                               description: nil,
                               accessoryType: .none,
-                              isVisible: true)
+                              isVisible: true,
+                              clickEvent: nil)
     }
 
     private func settingsOptionThirdPartyDependencies() -> SettingsOption {
         return SettingsOption(title: "Third Party Dependencies",
                               description: nil,
                               accessoryType: .none,
-                              isVisible: true)
+                              isVisible: true,
+                              clickEvent: nil)
     }
 
     private func settingsOptionAuthor() -> SettingsOption {
         return SettingsOption(title: "Author",
                               description: nil,
                               accessoryType: .none,
-                              isVisible: true)
+                              isVisible: true,
+                              clickEvent: nil)
     }
 }

@@ -31,8 +31,10 @@ struct SignalButton_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             StepIncrementLabel(type: .increment)
+                .previewLayout(.sizeThatFits)
             StepIncrementLabel(type: .decrement)
                 .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
         }
     }
 }
