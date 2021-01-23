@@ -1,33 +1,21 @@
 //
-//  Copyright © 2020  ___ORGANIZATIONNAME___ . All rights reserved.
+//  Copyright © 2021  ___ORGANIZATIONNAME___ . All rights reserved.
 
 import SwiftUI
 import ComposableArchitecture
 
-struct SettingsView: View {
+struct SettingsOptionsView: View {
 
     let store: Store<AppState, AppAction>
 
     var body: some View {
         WithViewStore(self.store) { viewStore in
-
-            List {
-                ForEach(viewStore.settings.optionGroups) { group in
-                    Section(header: Text(group.title ?? ""),
-                            footer: Text(group.footer ?? "")) {
-                        ForEach(group.options) { item in
-                            Text(item.title)
-                        }
-                    }
-                }
-            }
-            .listStyle(GroupedListStyle())
             AppVersionTag(version: viewStore.settings.systemInfo.version)
         }
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
+struct SettingsoptionsView_Previews: PreviewProvider {
     static let demoStore = Store(
         initialState: AppState(
             id: UUID(),
@@ -41,8 +29,8 @@ struct SettingsView_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            SettingsView(store: demoStore)
-            SettingsView(store: demoStore)
+            SettingsOptionsView(store: demoStore)
+            SettingsOptionsView(store: demoStore)
                 .preferredColorScheme(.dark)
         }
     }

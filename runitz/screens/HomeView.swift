@@ -43,14 +43,6 @@ struct HomeView: View {
             .navigationTitle(Text("Home"))
             .navigationBarItems(
                 trailing:
-                    //                    Button(
-                    //                        action: {
-                    //                            SettingsView(store: store)
-                    //                        },
-                    //                        label: {
-                    //                            Image(systemName: "gear")
-                    //                        }
-                    //                    )
                     NavigationLink(
                         destination: SettingsView(store: store),
                         label: { Image(systemName: "gear") }
