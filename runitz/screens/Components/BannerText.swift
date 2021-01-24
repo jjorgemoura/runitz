@@ -13,15 +13,15 @@ struct BannerText: View {
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
                     .padding()
-                    .background(Color.green)
-                    .foregroundColor(.orange)
-                    .font(Font.title2.weight(.semibold))
+                    .background(Color.appPrimaryVariant)
+                    .foregroundColor(.appOnPrimary)
+                    .font(Font.appBannerTitle)
                     .cornerRadius(5.0)
                     .frame(minWidth: 0, maxWidth: .infinity)
             }
         }
         .padding()
-        .background(Color.gray)
+        .background(Color.appSurface)
         .cornerRadius(5.0)
     }
 }

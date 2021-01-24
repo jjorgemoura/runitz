@@ -10,7 +10,6 @@ struct SettingsView: View {
 
     var body: some View {
         WithViewStore(self.store) { viewStore in
-
             List {
                 ForEach(viewStore.settings.optionGroups) { group in
                     Section(header: Text(group.title ?? ""),
@@ -20,10 +19,19 @@ struct SettingsView: View {
                         }
                     }
                 }
+//                Section(footer: AppVersionTag(version: viewStore.settings.systemInfo.version)
+//                            .alignmentGuide(HorizontalAlignment.center) { dimension in
+//                                0
+//                            }) {
+//                }
+//                .alignmentGuide(HorizontalAlignment.center) { dimension in
+//                    0
+//                }
             }
             .listStyle(GroupedListStyle())
             AppVersionTag(version: viewStore.settings.systemInfo.version)
         }
+        .accentColor(.appPrimary)
     }
 }
 

@@ -7,14 +7,13 @@ struct AppVersionTag: View {
     let version: String
 
     var body: some View {
-//        Text(note)
-//            .font(.system(size: 160, design: .rounded))
         VStack {
             Text("Version Number")
-                .bold()
-                .foregroundColor(.red)
+                .font(Font.appCustomContentTitle)
+                .foregroundColor(.appPrimary)
             Text(version)
-                .foregroundColor(.blue)
+                .font(Font.appCustomContentBody)
+                .foregroundColor(.appOnPrimary)
         }
     }
 }

@@ -11,9 +11,9 @@ struct UnitSwitchButton: View {
 //            viewStore.send(AppAction.switchToNextDistanceUnit)
         }
         .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
-        .foregroundColor(.gray)
-        .background(Color.red)
-        .font(Font.title2.weight(.semibold))
+        .foregroundColor(.appOnSecondary)
+        .background(Color.appSecondary)
+        .font(Font.appBannerInteractive)
     }
 }
 

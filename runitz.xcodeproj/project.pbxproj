@@ -28,6 +28,9 @@
 		CFB2EA462584DFB6009556D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA452584DFB6009556D5 /* HomeView.swift */; };
 		CFB2EA4E2584E204009556D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA4D2584E204009556D5 /* SettingsView.swift */; };
 		CFB2EA532584E222009556D5 /* PaceConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA522584E222009556D5 /* PaceConversionView.swift */; };
+		CFDA36A025BD8A6600CA94AE /* PaletteColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA369F25BD8A6600CA94AE /* PaletteColor.swift */; };
+		CFDA36A825BDE54600CA94AE /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA36A725BDE54600CA94AE /* Typography.swift */; };
+		CFDA36AD25BE1E3600CA94AE /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA36AC25BE1E3600CA94AE /* AppCore.swift */; };
 		CFE7B919258FACF6003627B1 /* Unit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */; };
 		CFE7B939258FB47E003627B1 /* SettingsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE7B938258FB47E003627B1 /* SettingsOptions.swift */; };
 		CFE7B93F258FB4A2003627B1 /* SettingsOptionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE7B93E258FB4A2003627B1 /* SettingsOptionsFactory.swift */; };
@@ -91,6 +94,9 @@
 		CFB2EA452584DFB6009556D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CFB2EA4D2584E204009556D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CFB2EA522584E222009556D5 /* PaceConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceConversionView.swift; sourceTree = "<group>"; };
+		CFDA369F25BD8A6600CA94AE /* PaletteColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteColor.swift; sourceTree = "<group>"; };
+		CFDA36A725BDE54600CA94AE /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		CFDA36AC25BE1E3600CA94AE /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
 		CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit+Utilities.swift"; sourceTree = "<group>"; };
 		CFE7B938258FB47E003627B1 /* SettingsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptions.swift; sourceTree = "<group>"; };
 		CFE7B93E258FB4A2003627B1 /* SettingsOptionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsFactory.swift; sourceTree = "<group>"; };
@@ -241,6 +247,16 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		CFDA369E25BD8A3A00CA94AE /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA369F25BD8A6600CA94AE /* PaletteColor.swift */,
+				CFDA36A725BDE54600CA94AE /* Typography.swift */,
+				CFDA36AC25BE1E3600CA94AE /* AppCore.swift */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
 		CFE7B917258FACD9003627B1 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +309,7 @@
 		CFF88198255929A60023E5E6 /* application */ = {
 			isa = PBXGroup;
 			children = (
+				CFDA369E25BD8A3A00CA94AE /* configuration */,
 				CFF8819C255929A60023E5E6 /* domain */,
 				CFF8819B255929A60023E5E6 /* AppAction.swift */,
 				CFF881A1255929A60023E5E6 /* AppEnvironment.swift */,
@@ -489,6 +506,7 @@
 				CFA0858E25BC4121003B26B5 /* UnitSwitchButton.swift in Sources */,
 				CFA0858425BC3C18003B26B5 /* SettingsPlainView.swift in Sources */,
 				CFA0857F25BC3C09003B26B5 /* SettingsOptionsView.swift in Sources */,
+				CFDA36A025BD8A6600CA94AE /* PaletteColor.swift in Sources */,
 				CF33129E25B3161100586769 /* StepIncrementLabel.swift in Sources */,
 				CFE7B94A258FCF90003627B1 /* SystemInfo.swift in Sources */,
 				CFA0858925BC4113003B26B5 /* DistanceController.swift in Sources */,
@@ -497,6 +515,7 @@
 				CFF881A7255929A60023E5E6 /* AppAction.swift in Sources */,
 				CFF881A4255929A60023E5E6 /* DistanceConversionView.swift in Sources */,
 				CFF881B825592A150023E5E6 /* RunitzApp.swift in Sources */,
+				CFDA36A825BDE54600CA94AE /* Typography.swift in Sources */,
 				CF3312B225B3969000586769 /* StorageService.swift in Sources */,
 				CFF881A9255929A60023E5E6 /* Unit.swift in Sources */,
 				CFE7B93F258FB4A2003627B1 /* SettingsOptionsFactory.swift in Sources */,
@@ -510,6 +529,7 @@
 				CFF881AC255929A60023E5E6 /* AppEnvironment.swift in Sources */,
 				CFB2EA4E2584E204009556D5 /* SettingsView.swift in Sources */,
 				CFB2EA532584E222009556D5 /* PaceConversionView.swift in Sources */,
+				CFDA36AD25BE1E3600CA94AE /* AppCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

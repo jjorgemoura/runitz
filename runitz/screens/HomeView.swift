@@ -49,6 +49,7 @@ struct HomeView: View {
                     )
             )
         }
+        .accentColor(.appPrimary)
     }
 }
 
