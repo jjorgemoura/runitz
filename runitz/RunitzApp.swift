@@ -16,6 +16,7 @@ struct RunitzApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView(store: store)
+//                .environment(\.colorScheme, .dark)
         }
     }
 
@@ -25,7 +26,7 @@ struct RunitzApp: App {
         let initialDistance = Distance(value: 5, unit: .km)
         let initialPace = Pace(seconds: 300, unit: .km)
         let initialSettings = SettingsOptionsFactory().defaultSettingsOptions()
-        return AppState(id: UUID(), currentDistance: initialDistance, currentPace: initialPace, settings: initialSettings)
+        return AppState(id: UUID(), currentDistance: initialDistance, currentPace: initialPace, settings: initialSettings, settingsTheme: .system)
     }
 
     private static func initEnvironment() -> AppEnvironment {

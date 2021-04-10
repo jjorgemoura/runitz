@@ -10,14 +10,14 @@ struct BannerText: View {
         HStack(alignment: .center) {
             ForEach(data, id: \.self) { item in
                 Text(item)
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
                     .padding()
+                    .font(Font.appBannerTitle)
                     .background(Color.appPrimaryVariant)
                     .foregroundColor(.appOnPrimary)
-                    .font(Font.appBannerTitle)
                     .cornerRadius(5.0)
-                    .frame(minWidth: 0, maxWidth: .infinity)
             }
         }
         .padding()

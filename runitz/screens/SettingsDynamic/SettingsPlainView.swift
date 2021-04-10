@@ -21,7 +21,8 @@ struct SettingsPlainView_Previews: PreviewProvider {
             id: UUID(),
             currentDistance: Distance(value: 5, unit: .km),
             currentPace: Pace(seconds: 300, unit: .km),
-            settings: SettingsOptionsFactory().defaultSettingsOptions()
+            settings: SettingsOptionsFactory().defaultSettingsOptions(),
+            settingsTheme: .system
         ),
         reducer: appReducer,
         environment: AppEnvironment()

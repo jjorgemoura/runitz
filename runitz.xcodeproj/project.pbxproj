@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF023C9525C5D4EB00B3607C /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF023C9425C5D4EB00B3607C /* AppSettingsView.swift */; };
+		CF023C9C25C603E600B3607C /* ThemingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF023C9B25C603E600B3607C /* ThemingService.swift */; };
 		CF088479255927C40091F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF088478255927C40091F0C8 /* Assets.xcassets */; };
 		CF08847C255927C40091F0C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF08847B255927C40091F0C8 /* Preview Assets.xcassets */; };
 		CF088487255927C40091F0C8 /* RunitzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF088486255927C40091F0C8 /* RunitzTests.swift */; };
@@ -67,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF023C9425C5D4EB00B3607C /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		CF023C9B25C603E600B3607C /* ThemingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemingService.swift; sourceTree = "<group>"; };
 		CF088471255927C40091F0C8 /* runitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF088478255927C40091F0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF08847B255927C40091F0C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -140,6 +144,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF023C9225C5D48E00B3607C /* SettingsDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2EA4D2584E204009556D5 /* SettingsView.swift */,
+				CFA0857E25BC3C09003B26B5 /* SettingsOptionsView.swift */,
+				CFA0858325BC3C18003B26B5 /* SettingsPlainView.swift */,
+			);
+			path = SettingsDynamic;
+			sourceTree = "<group>";
+		};
+		CF023C9325C5D49400B3607C /* SettingsStatic */ = {
+			isa = PBXGroup;
+			children = (
+				CF023C9425C5D4EB00B3607C /* AppSettingsView.swift */,
+			);
+			path = SettingsStatic;
+			sourceTree = "<group>";
+		};
 		CF088468255927C40091F0C8 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +241,7 @@
 			children = (
 				CF3312B125B3969000586769 /* StorageService.swift */,
 				CFA0856B25BC3663003B26B5 /* LocalStorageAppState.swift */,
+				CF023C9B25C603E600B3607C /* ThemingService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -295,13 +318,12 @@
 		CFF88196255929A60023E5E6 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				CF023C9325C5D49400B3607C /* SettingsStatic */,
+				CF023C9225C5D48E00B3607C /* SettingsDynamic */,
 				CF33129C25B315CF00586769 /* Components */,
 				CFB2EA452584DFB6009556D5 /* HomeView.swift */,
 				CFF88197255929A60023E5E6 /* DistanceConversionView.swift */,
 				CFB2EA522584E222009556D5 /* PaceConversionView.swift */,
-				CFB2EA4D2584E204009556D5 /* SettingsView.swift */,
-				CFA0857E25BC3C09003B26B5 /* SettingsOptionsView.swift */,
-				CFA0858325BC3C18003B26B5 /* SettingsPlainView.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -511,9 +533,11 @@
 				CFE7B94A258FCF90003627B1 /* SystemInfo.swift in Sources */,
 				CFA0858925BC4113003B26B5 /* DistanceController.swift in Sources */,
 				CFF881AA255929A60023E5E6 /* Pace.swift in Sources */,
+				CF023C9C25C603E600B3607C /* ThemingService.swift in Sources */,
 				CF3312A925B368D600586769 /* BannerText.swift in Sources */,
 				CFF881A7255929A60023E5E6 /* AppAction.swift in Sources */,
 				CFF881A4255929A60023E5E6 /* DistanceConversionView.swift in Sources */,
+				CF023C9525C5D4EB00B3607C /* AppSettingsView.swift in Sources */,
 				CFF881B825592A150023E5E6 /* RunitzApp.swift in Sources */,
 				CFDA36A825BDE54600CA94AE /* Typography.swift in Sources */,
 				CF3312B225B3969000586769 /* StorageService.swift in Sources */,
