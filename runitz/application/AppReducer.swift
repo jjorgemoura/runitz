@@ -29,6 +29,10 @@ let appReducer = Reducer<AppState, AppAction, AppEnvironment> { state, action, e
     case .switchToNextPaceUnit:
         state.currentPace.unit = state.currentPace.unit.nextPaceUnit()
         return .none
+
+    case .updateTheme(let theme):
+        state.settingsTheme = theme
+        return .none
     }
 }
 .debug()

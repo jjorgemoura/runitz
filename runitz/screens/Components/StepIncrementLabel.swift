@@ -15,13 +15,13 @@ struct StepIncrementLabel: View {
         switch type {
         case .increment:
             return Image(systemName: "plus.circle")
-                .font(Font.title2.weight(.medium))
-                .foregroundColor(.orange)
+                .font(Font.appBannerInteractiveControls)
+                .foregroundColor(.appSecondary)
                 .padding(12.0)
         case .decrement:
             return Image(systemName: "minus.circle")
-                .font(Font.title2.weight(.medium))
-                .foregroundColor(.orange)
+                .font(Font.appBannerInteractiveControls)
+                .foregroundColor(.appSecondary)
                 .padding(12.0)
         }
     }

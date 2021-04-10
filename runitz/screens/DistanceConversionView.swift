@@ -34,10 +34,10 @@ struct DistanceConversionView: View {
 //                .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
 //                .foregroundColor(.gray)
 //                .background(Color.red)
-//                .font(Font.title2.weight(.semibold))
                 UnitSwitchButton(unit: viewStore.currentDistance.unit.rawValue)
                 Spacer()
             }
+            .accentColor(.appPrimary)
         }
     }
 }
@@ -48,7 +48,8 @@ struct DistanceConversionView_Previews: PreviewProvider {
             id: UUID(),
             currentDistance: Distance(value: 5, unit: .km),
             currentPace: Pace(seconds: 300, unit: .km),
-            settings: SettingsOptionsFactory().defaultSettingsOptions()
+            settings: SettingsOptionsFactory().defaultSettingsOptions(),
+            settingsTheme: .system
         ),
         reducer: appReducer,
         environment: AppEnvironment()

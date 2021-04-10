@@ -9,9 +9,9 @@ struct DistanceController: View {
     var body: some View {
         Text(distance)
             .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
-            .foregroundColor(.green)
-            .background(Color.orange)
-            .font(Font.title2.weight(.semibold))
+            .foregroundColor(.appOnPrimary)
+            .background(Color.appPrimary)
+            .font(Font.appBannerInteractive)
             .cornerRadius(3.0)
     }
 }

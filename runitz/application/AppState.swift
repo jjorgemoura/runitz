@@ -9,4 +9,11 @@ struct AppState: Identifiable, Equatable {
     var currentPace: Pace
 
     var settings: SettingsOptions
+    var settingsTheme: AppSettingsTheme
+}
+
+enum AppSettingsTheme: String, CaseIterable {
+    case light
+    case dark
+    case system
 }
