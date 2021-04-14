@@ -24,9 +24,11 @@ struct RunitzApp: App {
 
     private static func initState() -> AppState {
         let initialDistance = Distance(value: 5, unit: .km)
-        let initialPace = Pace(seconds: 300, unit: .km)
-        let initialSettings = SettingsOptionsFactory().defaultSettingsOptions()
-        return AppState(id: UUID(), currentDistance: initialDistance, currentPace: initialPace, settings: initialSettings, settingsTheme: .system)
+//        let initialPace = Pace(seconds: 300, unit: .km)
+//        let initialSettings = SettingsOptionsFactory().defaultSettingsOptions()
+
+//        return AppState(id: UUID(), currentDistance: initialDistance, currentPace: initialPace, settings: initialSettings, settingsTheme: .system)
+        return AppState(id: UUID(), currentDistance: initialDistance)
     }
 
     private static func initEnvironment() -> AppEnvironment {

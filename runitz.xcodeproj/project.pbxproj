@@ -28,11 +28,13 @@
 		CFA0858925BC4113003B26B5 /* DistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA0858825BC4113003B26B5 /* DistanceController.swift */; };
 		CFA0858E25BC4121003B26B5 /* UnitSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA0858D25BC4121003B26B5 /* UnitSwitchButton.swift */; };
 		CFB2EA462584DFB6009556D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA452584DFB6009556D5 /* HomeView.swift */; };
-		CFB2EA4E2584E204009556D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA4D2584E204009556D5 /* SettingsView.swift */; };
+		CFB2EA4E2584E204009556D5 /* SettingsView_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA4D2584E204009556D5 /* SettingsView_old.swift */; };
 		CFB2EA532584E222009556D5 /* PaceConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2EA522584E222009556D5 /* PaceConversionView.swift */; };
 		CFDA36A025BD8A6600CA94AE /* PaletteColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA369F25BD8A6600CA94AE /* PaletteColor.swift */; };
 		CFDA36A825BDE54600CA94AE /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA36A725BDE54600CA94AE /* Typography.swift */; };
-		CFDA36AD25BE1E3600CA94AE /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA36AC25BE1E3600CA94AE /* AppCore.swift */; };
+		CFE42D5426224BF5008C658F /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE42D5326224BF5008C658F /* SettingsStore.swift */; };
+		CFE42D5926224C8A008C658F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE42D5826224C8A008C658F /* Settings.swift */; };
+		CFE4AADC2627802100782EAE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4AADB2627802100782EAE /* SettingsView.swift */; };
 		CFE7B919258FACF6003627B1 /* Unit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */; };
 		CFE7B939258FB47E003627B1 /* SettingsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE7B938258FB47E003627B1 /* SettingsOptions.swift */; };
 		CFE7B93F258FB4A2003627B1 /* SettingsOptionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE7B93E258FB4A2003627B1 /* SettingsOptionsFactory.swift */; };
@@ -96,11 +98,13 @@
 		CFA0858825BC4113003B26B5 /* DistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceController.swift; sourceTree = "<group>"; };
 		CFA0858D25BC4121003B26B5 /* UnitSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSwitchButton.swift; sourceTree = "<group>"; };
 		CFB2EA452584DFB6009556D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		CFB2EA4D2584E204009556D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFB2EA4D2584E204009556D5 /* SettingsView_old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView_old.swift; sourceTree = "<group>"; };
 		CFB2EA522584E222009556D5 /* PaceConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceConversionView.swift; sourceTree = "<group>"; };
 		CFDA369F25BD8A6600CA94AE /* PaletteColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteColor.swift; sourceTree = "<group>"; };
 		CFDA36A725BDE54600CA94AE /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
-		CFDA36AC25BE1E3600CA94AE /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		CFE42D5326224BF5008C658F /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		CFE42D5826224C8A008C658F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		CFE4AADB2627802100782EAE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit+Utilities.swift"; sourceTree = "<group>"; };
 		CFE7B938258FB47E003627B1 /* SettingsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptions.swift; sourceTree = "<group>"; };
 		CFE7B93E258FB4A2003627B1 /* SettingsOptionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsFactory.swift; sourceTree = "<group>"; };
@@ -147,7 +151,7 @@
 		CF023C9225C5D48E00B3607C /* SettingsDynamic */ = {
 			isa = PBXGroup;
 			children = (
-				CFB2EA4D2584E204009556D5 /* SettingsView.swift */,
+				CFB2EA4D2584E204009556D5 /* SettingsView_old.swift */,
 				CFA0857E25BC3C09003B26B5 /* SettingsOptionsView.swift */,
 				CFA0858325BC3C18003B26B5 /* SettingsPlainView.swift */,
 			);
@@ -185,13 +189,12 @@
 		CF088473255927C40091F0C8 /* runitz */ = {
 			isa = PBXGroup;
 			children = (
-				CFF88198255929A60023E5E6 /* application */,
-				CFF881A2255929A60023E5E6 /* environment */,
-				CFF88196255929A60023E5E6 /* screens */,
-				CF08847A255927C40091F0C8 /* Preview Content */,
-				CFF881B725592A150023E5E6 /* RunitzApp.swift */,
-				CF088478255927C40091F0C8 /* Assets.xcassets */,
-				CF08847D255927C40091F0C8 /* Info.plist */,
+				CF127D4F262226F900CCCC99 /* application */,
+				CF127D522622273400CCCC99 /* environment */,
+				CF127D502622270300CCCC99 /* features */,
+				CF127D512622271B00CCCC99 /* resources */,
+				CFF881A2255929A60023E5E6 /* environmentOLD */,
+				CFF88196255929A60023E5E6 /* screensOLD */,
 			);
 			path = runitz;
 			sourceTree = "<group>";
@@ -224,6 +227,91 @@
 			path = runitzUITests;
 			sourceTree = "<group>";
 		};
+		CF127D4F262226F900CCCC99 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				CF127D7226222AB600CCCC99 /* app */,
+				CFF8819C255929A60023E5E6 /* domain */,
+				CF127D68262229AE00CCCC99 /* ui */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		CF127D502622270300CCCC99 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				CF127D672622289600CCCC99 /* distance */,
+				CF127D662622288D00CCCC99 /* home */,
+				CF127D652622288600CCCC99 /* settings */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		CF127D512622271B00CCCC99 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF08847A255927C40091F0C8 /* Preview Content */,
+				CFF881B725592A150023E5E6 /* RunitzApp.swift */,
+				CF08847D255927C40091F0C8 /* Info.plist */,
+				CF088478255927C40091F0C8 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		CF127D522622273400CCCC99 /* environment */ = {
+			isa = PBXGroup;
+			children = (
+				CF886B73257BAE60001746D3 /* extensions */,
+			);
+			path = environment;
+			sourceTree = "<group>";
+		};
+		CF127D652622288600CCCC99 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				CFE42D5826224C8A008C658F /* Settings.swift */,
+				CFE42D5326224BF5008C658F /* SettingsStore.swift */,
+				CFE4AADB2627802100782EAE /* SettingsView.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		CF127D662622288D00CCCC99 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2EA452584DFB6009556D5 /* HomeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		CF127D672622289600CCCC99 /* distance */ = {
+			isa = PBXGroup;
+			children = (
+				CFF88197255929A60023E5E6 /* DistanceConversionView.swift */,
+			);
+			path = distance;
+			sourceTree = "<group>";
+		};
+		CF127D68262229AE00CCCC99 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA369F25BD8A6600CA94AE /* PaletteColor.swift */,
+				CFDA36A725BDE54600CA94AE /* Typography.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		CF127D7226222AB600CCCC99 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CFF8819B255929A60023E5E6 /* AppAction.swift */,
+				CFF881A1255929A60023E5E6 /* AppEnvironment.swift */,
+				CFF8819A255929A60023E5E6 /* AppReducer.swift */,
+				CFF88199255929A60023E5E6 /* AppState.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
 		CF33129C25B315CF00586769 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +337,7 @@
 		CF886B73257BAE60001746D3 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */,
 				CF886B74257BAE89001746D3 /* Double+Round.swift */,
 			);
 			path = extensions;
@@ -266,24 +355,6 @@
 			isa = PBXGroup;
 			children = (
 				CF886B7E257BAF98001746D3 /* DoubleExtensionsTests.swift */,
-			);
-			path = extensions;
-			sourceTree = "<group>";
-		};
-		CFDA369E25BD8A3A00CA94AE /* configuration */ = {
-			isa = PBXGroup;
-			children = (
-				CFDA369F25BD8A6600CA94AE /* PaletteColor.swift */,
-				CFDA36A725BDE54600CA94AE /* Typography.swift */,
-				CFDA36AC25BE1E3600CA94AE /* AppCore.swift */,
-			);
-			path = configuration;
-			sourceTree = "<group>";
-		};
-		CFE7B917258FACD9003627B1 /* extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CFE7B918258FACF6003627B1 /* Unit+Utilities.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -315,37 +386,21 @@
 			path = domain;
 			sourceTree = "<group>";
 		};
-		CFF88196255929A60023E5E6 /* screens */ = {
+		CFF88196255929A60023E5E6 /* screensOLD */ = {
 			isa = PBXGroup;
 			children = (
 				CF023C9325C5D49400B3607C /* SettingsStatic */,
 				CF023C9225C5D48E00B3607C /* SettingsDynamic */,
 				CF33129C25B315CF00586769 /* Components */,
-				CFB2EA452584DFB6009556D5 /* HomeView.swift */,
-				CFF88197255929A60023E5E6 /* DistanceConversionView.swift */,
 				CFB2EA522584E222009556D5 /* PaceConversionView.swift */,
 			);
-			path = screens;
-			sourceTree = "<group>";
-		};
-		CFF88198255929A60023E5E6 /* application */ = {
-			isa = PBXGroup;
-			children = (
-				CFDA369E25BD8A3A00CA94AE /* configuration */,
-				CFF8819C255929A60023E5E6 /* domain */,
-				CFF8819B255929A60023E5E6 /* AppAction.swift */,
-				CFF881A1255929A60023E5E6 /* AppEnvironment.swift */,
-				CFF8819A255929A60023E5E6 /* AppReducer.swift */,
-				CFF88199255929A60023E5E6 /* AppState.swift */,
-			);
-			path = application;
+			path = screensOLD;
 			sourceTree = "<group>";
 		};
 		CFF8819C255929A60023E5E6 /* domain */ = {
 			isa = PBXGroup;
 			children = (
 				CFE7B93D258FB48F003627B1 /* factories */,
-				CFE7B917258FACD9003627B1 /* extensions */,
 				CFF8819D255929A60023E5E6 /* Distance.swift */,
 				CFF8819F255929A60023E5E6 /* Pace.swift */,
 				CFF8819E255929A60023E5E6 /* Unit.swift */,
@@ -355,13 +410,12 @@
 			path = domain;
 			sourceTree = "<group>";
 		};
-		CFF881A2255929A60023E5E6 /* environment */ = {
+		CFF881A2255929A60023E5E6 /* environmentOLD */ = {
 			isa = PBXGroup;
 			children = (
 				CF3312B025B3965100586769 /* services */,
-				CF886B73257BAE60001746D3 /* extensions */,
 			);
-			path = environment;
+			path = environmentOLD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,6 +588,7 @@
 				CFA0858925BC4113003B26B5 /* DistanceController.swift in Sources */,
 				CFF881AA255929A60023E5E6 /* Pace.swift in Sources */,
 				CF023C9C25C603E600B3607C /* ThemingService.swift in Sources */,
+				CFE42D5426224BF5008C658F /* SettingsStore.swift in Sources */,
 				CF3312A925B368D600586769 /* BannerText.swift in Sources */,
 				CFF881A7255929A60023E5E6 /* AppAction.swift in Sources */,
 				CFF881A4255929A60023E5E6 /* DistanceConversionView.swift in Sources */,
@@ -543,17 +598,18 @@
 				CF3312B225B3969000586769 /* StorageService.swift in Sources */,
 				CFF881A9255929A60023E5E6 /* Unit.swift in Sources */,
 				CFE7B93F258FB4A2003627B1 /* SettingsOptionsFactory.swift in Sources */,
+				CFE4AADC2627802100782EAE /* SettingsView.swift in Sources */,
 				CFE7B919258FACF6003627B1 /* Unit+Utilities.swift in Sources */,
 				CFA0856C25BC3663003B26B5 /* LocalStorageAppState.swift in Sources */,
 				CFE7B939258FB47E003627B1 /* SettingsOptions.swift in Sources */,
 				CFF881A5255929A60023E5E6 /* AppState.swift in Sources */,
 				CFF881A8255929A60023E5E6 /* Distance.swift in Sources */,
+				CFE42D5926224C8A008C658F /* Settings.swift in Sources */,
 				CF886B75257BAE89001746D3 /* Double+Round.swift in Sources */,
 				CFB2EA462584DFB6009556D5 /* HomeView.swift in Sources */,
 				CFF881AC255929A60023E5E6 /* AppEnvironment.swift in Sources */,
-				CFB2EA4E2584E204009556D5 /* SettingsView.swift in Sources */,
+				CFB2EA4E2584E204009556D5 /* SettingsView_old.swift in Sources */,
 				CFB2EA532584E222009556D5 /* PaceConversionView.swift in Sources */,
-				CFDA36AD25BE1E3600CA94AE /* AppCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,10 +775,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_ASSET_PATHS = "\"runitz/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"runitz/resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 6CHZFW8V57;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = runitz/Info.plist;
+				INFOPLIST_FILE = runitz/resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -743,10 +799,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_ASSET_PATHS = "\"runitz/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"runitz/resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 6CHZFW8V57;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = runitz/Info.plist;
+				INFOPLIST_FILE = runitz/resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

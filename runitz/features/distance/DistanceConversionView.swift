@@ -22,18 +22,18 @@ struct DistanceConversionView: View {
                 ])
                 Spacer()
                 HStack {
-                    Button(action: { viewStore.send(.decreaseDistance(1)) },
-                           label: { StepIncrementLabel(type: .decrement) })
+//                    Button(action: { viewStore.send(.decreaseDistance(1)) },
+//                           label: { StepIncrementLabel(type: .decrement) })
                     DistanceController(distance: "\(String(viewStore.currentDistance.value.round(to: 1)))")
-                    Button(action: { viewStore.send(.increaseDistance(1)) },
-                           label: { StepIncrementLabel(type: .increment) })
+//                    Button(action: { viewStore.send(.increaseDistance(1)) },
+//                           label: { StepIncrementLabel(type: .increment) })
                 }
-//                Button(viewStore.currentDistance.unit.rawValue) {
-//                    viewStore.send(AppAction.switchToNextDistanceUnit)
-//                }
-//                .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
-//                .foregroundColor(.gray)
-//                .background(Color.red)
+////                Button(viewStore.currentDistance.unit.rawValue) {
+////                    viewStore.send(AppAction.switchToNextDistanceUnit)
+////                }
+////                .padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
+////                .foregroundColor(.gray)
+////                .background(Color.red)
                 UnitSwitchButton(unit: viewStore.currentDistance.unit.rawValue)
                 Spacer()
             }
@@ -46,10 +46,10 @@ struct DistanceConversionView_Previews: PreviewProvider {
     static let demoStore = Store(
         initialState: AppState(
             id: UUID(),
-            currentDistance: Distance(value: 5, unit: .km),
-            currentPace: Pace(seconds: 300, unit: .km),
-            settings: SettingsOptionsFactory().defaultSettingsOptions(),
-            settingsTheme: .system
+            currentDistance: Distance(value: 5, unit: .km)
+//            currentPace: Pace(seconds: 300, unit: .km),
+//            settings: SettingsOptionsFactory().defaultSettingsOptions(),
+//            settingsTheme: .system
         ),
         reducer: appReducer,
         environment: AppEnvironment()
